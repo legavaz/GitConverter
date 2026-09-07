@@ -1,0 +1,553 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаКонвертироватьВФорматEDT" id="7">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.КонвертироватьВФорматEDT</CommandName>
+				<ExtendedTooltip name="ФормаКонвертироватьВФорматEDTРасширеннаяПодсказка" id="8"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="Декорация1" id="12">
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;b&gt;&lt;colorstyle -16&gt;Внимание!&lt;/&gt;&lt;/&gt; Конвертация в формат 1C:EDT необратима, поэтому последующая синхронизация с хранилищем 1С будет выполняться в формате 1C:EDT.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="13"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="14"/>
+		</LabelDecoration>
+		<InputField name="Хранилище" id="1">
+			<DataPath>Хранилище</DataPath>
+			<ChoiceParameters>
+				<app:item name="Отбор.КонвертироватьВФорматEDT">
+					<app:value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation/>
+						<Value xsi:type="xs:boolean">false</Value>
+					</app:value>
+				</app:item>
+			</ChoiceParameters>
+			<ContextMenu name="ХранилищеКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ХранилищеРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="OnChange">ХранилищеПриИзменении</Event>
+			</Events>
+		</InputField>
+		<LabelField name="ХранилищеВерсияВGit" id="9">
+			<DataPath>Хранилище.ВерсияВGit</DataPath>
+			<Hiperlink>true</Hiperlink>
+			<ContextMenu name="ХранилищеВерсияВGitКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ХранилищеВерсияВGitРасширеннаяПодсказка" id="11"/>
+		</LabelField>
+		<InputField name="ХранилищеЛокальныйКаталогGit" id="18">
+			<DataPath>Хранилище.ЛокальныйКаталогGit</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ХранилищеЛокальныйКаталогGitКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="ХранилищеЛокальныйКаталогGitРасширеннаяПодсказка" id="20"/>
+		</InputField>
+		<InputField name="ХранилищеКаталогВыгрузкиВРепозитории" id="21">
+			<DataPath>Хранилище.КаталогВыгрузкиВРепозитории</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ContextMenu name="ХранилищеКаталогВыгрузкиВРепозиторииКонтекстноеМеню" id="22"/>
+			<ExtendedTooltip name="ХранилищеКаталогВыгрузкиВРепозиторииРасширеннаяПодсказка" id="23"/>
+		</InputField>
+		<InputField name="ВерсияПроектаEDT" id="71">
+			<DataPath>ВерсияПроектаEDT</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия проекта в 1C:EDT</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ContextMenu name="ВерсияПроектаEDTКонтекстноеМеню" id="72"/>
+			<ExtendedTooltip name="ВерсияПроектаEDTРасширеннаяПодсказка" id="73"/>
+		</InputField>
+		<InputField name="ИмяПроектаEDT" id="65">
+			<DataPath>ИмяПроектаEDT</DataPath>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя проекта в 1C:EDT. Должно совпадать с каталогом выгрузки в репозитории.</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ИмяПроектаEDTКонтекстноеМеню" id="66"/>
+			<ExtendedTooltip name="ИмяПроектаEDTРасширеннаяПодсказка" id="67"/>
+			<Events>
+				<Event name="OnChange">ИмяПроектаEDTПриИзменении</Event>
+			</Events>
+		</InputField>
+		<CheckBoxField name="ОтключитьРегламентныеЗадания" id="33">
+			<DataPath>ОтключитьРегламентныеЗадания</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОтключитьРегламентныеЗаданияКонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="ОтключитьРегламентныеЗаданияРасширеннаяПодсказка" id="35"/>
+		</CheckBoxField>
+		<CheckBoxField name="ОтключитьКоммиты" id="24">
+			<DataPath>ОтключитьКоммиты</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОтключитьКоммитыКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="ОтключитьКоммитыРасширеннаяПодсказка" id="26"/>
+		</CheckBoxField>
+		<CheckBoxField name="ОтключитьОчереди" id="27">
+			<DataPath>ОтключитьОчереди</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОтключитьОчередиКонтекстноеМеню" id="28"/>
+			<ExtendedTooltip name="ОтключитьОчередиРасширеннаяПодсказка" id="29"/>
+		</CheckBoxField>
+		<LabelDecoration name="Декорация2" id="15">
+			<TextColor>style:SpecialTextColor</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для конвертации на сервере должно быть установлено консольное приложение 1C:EDT 1.8 и выше.</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Убедитесь что приложение 1C:RING установлено корректно, выполнив команду в терминале:
+
+ring edt platform-versions
+
+Убедитесь что в 1C:EDT доступна версия платформы хранилища.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<ContextMenu name="Декорация2КонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="17"/>
+		</LabelDecoration>
+		<InputField name="ПутьКПроектуEDT" id="68">
+			<DataPath>ПутьКПроектуEDT</DataPath>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к EDT/ИмяПроекта/</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ПутьКПроектуEDTКонтекстноеМеню" id="69"/>
+			<ExtendedTooltip name="ПутьКПроектуEDTРасширеннаяПодсказка" id="70"/>
+		</InputField>
+		<InputField name="ПутьКФайламПроектаEDT" id="4">
+			<DataPath>ПутьКФайламПроектаEDT</DataPath>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к EDT/ИмяПроекта/src/</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="ПутьКФайламПроектаEDTКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПутьКФайламПроектаEDTРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="РабочийКаталогEDT" id="74">
+			<DataPath>РабочийКаталогEDT</DataPath>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Катало выгрузки версий/ws/</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="РабочийКаталогEDTКонтекстноеМеню" id="75"/>
+			<ExtendedTooltip name="РабочийКаталогEDTРасширеннаяПодсказка" id="76"/>
+		</InputField>
+		<UsualGroup name="ПараметрыКоммитаКонвертации" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры коммита конвертации</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ПараметрыКоммитаКонвертацииРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<InputField name="email" id="36">
+					<DataPath>email</DataPath>
+					<ContextMenu name="emailКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="emailРасширеннаяПодсказка" id="38"/>
+				</InputField>
+				<InputField name="ИмяПользователя" id="41">
+					<DataPath>ИмяПользователя</DataPath>
+					<ContextMenu name="ИмяПользователяКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ИмяПользователяРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="Комментарий" id="44">
+					<DataPath>Комментарий</DataPath>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="ВыполнитьПереносВКаталогПроекта" id="77">
+			<DataPath>ВыполнитьПереносВКаталогПроекта</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Если изначально при конвертации в формат 1С:Предприятия не был указан "Каталог выгрузки в репозитории" соответствующий имени проекта, то необходимо указать "Имя проекта 1C:EDT" и выполнить перенос файлов в каталог проекта </v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВыполнитьПереносВКаталогПроектаКонтекстноеМеню" id="78"/>
+			<ExtendedTooltip name="ВыполнитьПереносВКаталогПроектаРасширеннаяПодсказка" id="79"/>
+		</CheckBoxField>
+		<CheckBoxField name="ВыполнитьPushПослеКонвертации" id="47">
+			<DataPath>ВыполнитьPushПослеКонвертации</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВыполнитьPushПослеКонвертацииКонтекстноеМеню" id="48"/>
+			<ExtendedTooltip name="ВыполнитьPushПослеКонвертацииРасширеннаяПодсказка" id="49"/>
+		</CheckBoxField>
+		<UsualGroup name="Группа1" id="59">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<InputField name="ИмяФайлаКомандыGit" id="50">
+					<DataPath>ИмяФайлаКомандыGit</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<OpenButton>true</OpenButton>
+					<ContextMenu name="ИмяФайлаКомандыGitКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ИмяФайлаКомандыGitРасширеннаяПодсказка" id="52"/>
+					<Events>
+						<Event name="Opening">ИмяФайлаКомандыGitОткрытие</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="61">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="62"/>
+			<ChildItems>
+				<InputField name="ИмяФайлаКомментария" id="53">
+					<DataPath>ИмяФайлаКомментария</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<OpenButton>true</OpenButton>
+					<ContextMenu name="ИмяФайлаКомментарияКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ИмяФайлаКомментарияРасширеннаяПодсказка" id="55"/>
+					<Events>
+						<Event name="Opening">ИмяФайлаКомментарияОткрытие</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="63">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="64"/>
+			<ChildItems>
+				<InputField name="ИмяФайлаЛога" id="56">
+					<DataPath>ИмяФайлаЛога</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<OpenButton>true</OpenButton>
+					<ContextMenu name="ИмяФайлаЛогаКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ИмяФайлаЛогаРасширеннаяПодсказка" id="58"/>
+					<Events>
+						<Event name="Opening">ИмяФайлаЛогаОткрытие</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.КонвертацияВФорматEDT</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Хранилище" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хранилище</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ХранилищаКонфигураций</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ПутьКФайламПроектаEDT" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к файлам проекта 1C:EDT</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ОтключитьКоммиты" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить коммиты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтключитьОчереди" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить очереди</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьОчередиВыполнения</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ОтключитьРегламентныеЗадания" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить регламентные задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="email" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Email</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ИмяПользователя" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя пользователя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Комментарий" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ВыполнитьPushПослеКонвертации" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить push после конвертации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяФайлаЛога" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл лога</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяФайлаКомандыGit" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл команд конвертации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяФайлаКомментария" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл комментария</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяПроектаEDT" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя проекта 1C:EDT</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ПутьКПроектуEDT" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к проекту 1C:EDT</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ВерсияПроектаEDT" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия проекта в 1C:EDT</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="РабочийКаталогEDT" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рабочий каталог 1C:EDT</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ВыполнитьПереносВКаталогПроекта" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить перенос в каталог проекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КаталогВыгрузкиВерсий" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог выгрузки версий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КонвертироватьВФорматEDT" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конвертировать в формат EDT</v8:content>
+				</v8:item>
+			</Title>
+			<Action>КонвертироватьВФорматEDT</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="Хранилище">
+			<Type>
+				<v8:Type>cfg:CatalogRef.ХранилищаКонфигураций</v8:Type>
+			</Type>
+		</Parameter>
+	</Parameters>
+</Form>

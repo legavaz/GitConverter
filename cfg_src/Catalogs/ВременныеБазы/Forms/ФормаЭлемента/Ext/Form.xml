@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>true</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="Кластер" id="1">
+			<DataPath>Объект.Кластер</DataPath>
+			<ContextMenu name="КластерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КластерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ИмяБазыНаСервере" id="4">
+			<DataPath>Объект.ИмяБазыНаСервере</DataPath>
+			<ContextMenu name="ИмяБазыНаСервереКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ИмяБазыНаСервереРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Состояние" id="7">
+			<DataPath>Объект.Состояние</DataPath>
+			<ContextMenu name="СостояниеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ВерсияХранилища" id="10">
+			<DataPath>Объект.ВерсияХранилища</DataPath>
+			<ContextMenu name="ВерсияХранилищаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ВерсияХранилищаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ДатаЗанятия" id="13">
+			<DataPath>Объект.ДатаЗанятия</DataPath>
+			<ContextMenu name="ДатаЗанятияКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ДатаЗанятияРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="КоличествоИспользований" id="16">
+			<DataPath>Объект.КоличествоИспользований</DataPath>
+			<ContextMenu name="КоличествоИспользованийКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="КоличествоИспользованийРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ДатаПоследнегоОсвобождения" id="19">
+			<DataPath>Объект.ДатаПоследнегоОсвобождения</DataPath>
+			<ContextMenu name="ДатаПоследнегоОсвобожденияКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ДатаПоследнегоОсвобожденияРасширеннаяПодсказка" id="21"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ВременныеБазы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+</Form>

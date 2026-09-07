@@ -1,0 +1,1048 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="CommandBar" id="37">
+		<ChildItems>
+			<Button name="FormЗапуститьКонвертацию" id="31">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗапуститьКонвертацию</CommandName>
+				<ExtendedTooltip name="FormЗапуститьКонвертациюРасширеннаяПодсказка" id="32"/>
+			</Button>
+			<Button name="FormВыполнитьКоммиты" id="33">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыполнитьКоммиты</CommandName>
+				<ExtendedTooltip name="FormВыполнитьКоммитыРасширеннаяПодсказка" id="34"/>
+			</Button>
+			<Button name="FormОбновитьСостояние" id="35">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновитьСостояние</CommandName>
+				<ExtendedTooltip name="FormОбновитьСостояниеРасширеннаяПодсказка" id="36"/>
+			</Button>
+			<Button name="ФормаСоздатьРепозиторийGit" id="38">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьРепозиторийGit</CommandName>
+				<ExtendedTooltip name="ФормаСоздатьРепозиторийGitРасширеннаяПодсказка1" id="39"/>
+			</Button>
+			<Button name="ФормаОбновлятьСостояниеАвтоматически" id="42">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновлятьСостояниеАвтоматически</CommandName>
+				<ExtendedTooltip name="ФормаОбновлятьСостояниеАвтоматическиРасширеннаяПодсказка1" id="43"/>
+			</Button>
+			<Button name="ФормаЗагрузитьВерсииИзОтчетаПоХранилищу" id="55">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗагрузитьВерсииИзОтчетаПоХранилищу</CommandName>
+				<ExtendedTooltip name="ФормаЗагрузитьВерсииИзОтчетаПоХранилищуРасширеннаяПодсказка1" id="56"/>
+			</Button>
+			<Button name="ФормаПроверитьДоступнуюВерсиюEDT" id="170">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПроверитьДоступнуюВерсиюEDT</CommandName>
+				<ExtendedTooltip name="ФормаПроверитьДоступнуюВерсиюEDTРасширеннаяПодсказка" id="171"/>
+			</Button>
+			<Button name="ФормаКонвертироватьВФорматEDT" id="164">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КонвертироватьВФорматEDT</CommandName>
+				<ExtendedTooltip name="ФормаКонвертироватьВФорматEDTРасширеннаяПодсказка" id="165"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Group2" id="24">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ExtendedTooltip1" id="25"/>
+			<ChildItems>
+				<InputField name="Адрес" id="1">
+					<DataPath>Объект.Адрес</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Адрес или каталог файловой системы</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="АдресКонтекстноеМеню1" id="2"/>
+					<ExtendedTooltip name="АдресРасширеннаяПодсказка1" id="3"/>
+				</InputField>
+				<InputField name="ВерсияПлатформы" id="4">
+					<DataPath>Объект.ВерсияПлатформы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВерсияПлатформыКонтекстноеМеню1" id="5"/>
+					<ExtendedTooltip name="ВерсияПлатформыРасширеннаяПодсказка1" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаВременныеБазы" id="181">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Серверные временные базы</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>true</ShowTitle>
+			<ExtendedTooltip name="ГруппаВременныеБазыРасширеннаяПодсказка" id="182"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользоватьСерверныеВременныеБазы" id="183">
+					<DataPath>Объект.ИспользоватьСерверныеВременныеБазы</DataPath>
+					<ContextMenu name="ИспользоватьСерверныеВременныеБазыКонтекстноеМеню" id="184"/>
+					<ExtendedTooltip name="ИспользоватьСерверныеВременныеБазыРасширеннаяПодсказка" id="185"/>
+				</CheckBoxField>
+				<InputField name="КластерВременныхБаз" id="186">
+					<DataPath>Объект.КластерВременныхБаз</DataPath>
+					<ContextMenu name="КластерВременныхБазКонтекстноеМеню" id="187"/>
+					<ExtendedTooltip name="КластерВременныхБазРасширеннаяПодсказка" id="188"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="57">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="58"/>
+			<ChildItems>
+				<InputField name="ПерваяВерсия" id="59">
+					<DataPath>Объект.ПерваяВерсия</DataPath>
+					<ContextMenu name="ПерваяВерсияКонтекстноеМеню1" id="60"/>
+					<ExtendedTooltip name="ПерваяВерсияРасширеннаяПодсказка1" id="61"/>
+				</InputField>
+				<InputField name="ПоследняяВерсия" id="62">
+					<DataPath>Объект.ПоследняяВерсия</DataPath>
+					<ContextMenu name="ПоследняяВерсияКонтекстноеМеню1" id="63"/>
+					<ExtendedTooltip name="ПоследняяВерсияРасширеннаяПодсказка1" id="64"/>
+				</InputField>
+				<Button name="КонвертироватьВФорматEDT" id="166">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КонвертироватьВФорматEDT</CommandName>
+					<TextColor>style:SpecialTextColor</TextColor>
+					<ExtendedTooltip name="КонвертироватьВФорматEDTРасширеннаяПодсказка" id="167"/>
+				</Button>
+				<Button name="ПроверитьДоступнуюВерсиюEDT" id="168">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПроверитьДоступнуюВерсиюEDT</CommandName>
+					<ExtendedTooltip name="ПроверитьДоступнуюВерсиюEDTРасширеннаяПодсказка" id="169"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРегламентныйЗапуск" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа регламентный запуск</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа регламентный запуск</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРегламентныйЗапускРасширеннаяПодсказка" id="45"/>
+			<ChildItems>
+				<CheckBoxField name="РегламентноеЗаданиеИспользуется" id="46">
+					<DataPath>РегламентноеЗаданиеИспользуется</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РегламентноеЗаданиеИспользуетсяКонтекстноеМеню1" id="47"/>
+					<ExtendedTooltip name="РегламентноеЗаданиеИспользуетсяРасширеннаяПодсказка1" id="48"/>
+					<Events>
+						<Event name="OnChange">РегламентноеЗаданиеИспользуетсяПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<LabelField name="РасписаниеСтрокой" id="49">
+					<DataPath>РасписаниеСтрокой</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<Width>40</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="РасписаниеСтрокойКонтекстноеМеню1" id="50"/>
+					<ExtendedTooltip name="РасписаниеСтрокойРасширеннаяПодсказка1" id="51"/>
+					<Events>
+						<Event name="Click">РасписаниеСтрокойНажатие</Event>
+					</Events>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Group1" id="22">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ExtendedTooltip" id="23"/>
+			<ChildItems>
+				<InputField name="ИмяПользователяХранилища" id="10">
+					<DataPath>Объект.ИмяПользователяХранилища</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя пользователя</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>true</DropListButton>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:string">ТолькоПросмотр</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ИмяПользователяХранилищаКонтекстноеМеню1" id="11"/>
+					<ExtendedTooltip name="ИмяПользователяХранилищаРасширеннаяПодсказка1" id="12"/>
+				</InputField>
+				<InputField name="ПарольПользователяХранилища" id="13">
+					<DataPath>Объект.ПарольПользователяХранилища</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пароль</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПарольПользователяХранилищаКонтекстноеМеню1" id="14"/>
+					<ExtendedTooltip name="ПарольПользователяХранилищаРасширеннаяПодсказка1" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа7" id="156">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="157"/>
+			<ChildItems>
+				<InputField name="КаталогВыгрузкиВерсий" id="7">
+					<DataPath>Объект.КаталогВыгрузкиВерсий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Общий каталог в который будут выгражться все версии</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="КаталогВыгрузкиВерсийКонтекстноеМеню1" id="8"/>
+					<ExtendedTooltip name="КаталогВыгрузкиВерсийРасширеннаяПодсказка1" id="9"/>
+				</InputField>
+				<InputField name="ИмяФайлаЛога" id="158">
+					<DataPath>ИмяФайлаЛога</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Лог</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл лога подключения к хранилищу, считывания списка версий. Лог обработки каждой версии можно открыть и формы соответствующей версии.</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<OpenButton>true</OpenButton>
+					<ContextMenu name="ИмяФайлаЛогаКонтекстноеМеню" id="159"/>
+					<ExtendedTooltip name="ИмяФайлаЛогаРасширеннаяПодсказка" id="160"/>
+					<Events>
+						<Event name="Opening">ИмяФайлаЛогаОткрытие</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа4" id="110">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="111"/>
+			<ChildItems>
+				<InputField name="МаксимальноеКоличествоПодготавливаемыхВерсий" id="104">
+					<DataPath>Объект.МаксимальноеКоличествоПодготавливаемыхВерсий</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Макс. подготавливаемых версий</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="МаксимальноеКоличествоПодготавливаемыхВерсийКонтекстноеМеню1" id="105"/>
+					<ExtendedTooltip name="МаксимальноеКоличествоПодготавливаемыхВерсийРасширеннаяПодсказка1" id="106"/>
+				</InputField>
+				<InputField name="КоличествоПодготавливаемыхВерсий" id="128">
+					<DataPath>КоличествоПодготавливаемыхВерсий</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подготавливается</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КоличествоПодготавливаемыхВерсийКонтекстноеМеню" id="129"/>
+					<ExtendedTooltip name="КоличествоПодготавливаемыхВерсийРасширеннаяПодсказка" id="130"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Group4" id="123">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Group4ExtendedTooltip" id="124"/>
+			<ChildItems>
+				<InputField name="МинимальноеКоличествоМетаданных" id="112">
+					<DataPath>Объект.МинимальноеКоличествоМетаданных</DataPath>
+					<ContextMenu name="МинимальноеКоличествоМетаданныхКонтекстноеМеню1" id="113"/>
+					<ExtendedTooltip name="МинимальноеКоличествоМетаданныхРасширеннаяПодсказка1" id="114"/>
+				</InputField>
+				<InputField name="ВерсияВGitКоличествоМетаданных" id="125">
+					<DataPath>Объект.ВерсияВGit.КоличествоМетаданных</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество в тек. версии</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ВерсияВGitКоличествоМетаданныхКонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="ВерсияВGitКоличествоМетаданныхРасширеннаяПодсказка" id="127"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="РазрешитьПомещатьАнонимноЕслиНеНайденПользователь" id="131">
+			<DataPath>Объект.РазрешитьПомещатьАнонимноЕслиНеНайденПользователь</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="РазрешитьПомещатьАнонимноЕслиНеНайденПользовательКонтекстноеМеню1" id="132"/>
+			<ExtendedTooltip name="РазрешитьПомещатьАнонимноЕслиНеНайденПользовательРасширеннаяПодсказка1" id="133"/>
+		</CheckBoxField>
+		<CheckBoxField name="УдалятьКонфигурацииПоставщиков" id="142">
+			<DataPath>Объект.УдалятьКонфигурацииПоставщиков</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<WarningOnEditRepresentation>Show</WarningOnEditRepresentation>
+			<WarningOnEdit>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Внимание! Включение опции приведет к невозможности обновлять конфигурации поставщиков. Продолжить?</v8:content>
+				</v8:item>
+			</WarningOnEdit>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="УдалятьКонфигурацииПоставщиковКонтекстноеМеню" id="143"/>
+			<ExtendedTooltip name="УдалятьКонфигурацииПоставщиковРасширеннаяПодсказка" id="144"/>
+		</CheckBoxField>
+		<CheckBoxField name="УдалятьВременныеДанныеВерсииПослеКоммита" id="52">
+			<DataPath>Объект.УдалятьВременныеДанныеВерсииПослеКоммита</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="УдалятьВременныеДанныеВерсииПослеКоммитаКонтекстноеМеню1" id="53"/>
+			<ExtendedTooltip name="УдалятьВременныеДанныеВерсииПослеКоммитаРасширеннаяПодсказка1" id="54"/>
+		</CheckBoxField>
+		<CheckBoxField name="ВыгружатьИзменения" id="145">
+			<DataPath>Объект.ВыгружатьИзменения</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгружать изменения (ускорить конвертацию)</v8:content>
+				</v8:item>
+			</Title>
+			<TitleLocation>Right</TitleLocation>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ВыгружатьИзмененияКонтекстноеМеню" id="146"/>
+			<ExtendedTooltip name="ВыгружатьИзмененияРасширеннаяПодсказка" id="147"/>
+		</CheckBoxField>
+		<UsualGroup name="Group3" id="26">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ExtendedTooltip2" id="27"/>
+			<ChildItems>
+				<InputField name="ЛокальныйКаталогGit" id="19">
+					<DataPath>Объект.ЛокальныйКаталогGit</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ЛокальныйКаталогGitКонтекстноеМеню1" id="20"/>
+					<ExtendedTooltip name="ЛокальныйКаталогGitРасширеннаяПодсказка1" id="21"/>
+					<Events>
+						<Event name="OnChange">ЛокальныйКаталогGitПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="СоздатьРепозиторийGit" id="40">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.СоздатьРепозиторийGit</CommandName>
+					<ExtendedTooltip name="СоздатьРепозиторийGitРасширеннаяПодсказка1" id="41"/>
+				</Button>
+				<InputField name="ВерсияВGit" id="16">
+					<DataPath>Объект.ВерсияВGit</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВерсияВGitКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ВерсияВGitРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа6" id="137">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="138"/>
+			<ChildItems>
+				<InputField name="КаталогВыгрузкиВРепозитории" id="134">
+					<DataPath>Объект.КаталогВыгрузкиВРепозитории</DataPath>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Относительный путь к каталогу проекта. Может быть именем проекта в EDT или пустым...</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="КаталогВыгрузкиВРепозиторииКонтекстноеМеню" id="135"/>
+					<ExtendedTooltip name="КаталогВыгрузкиВРепозиторииРасширеннаяПодсказка" id="136"/>
+				</InputField>
+				<LabelDecoration name="Декорация1" id="139">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>/src</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="140"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="141"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ИмяВетки" id="107">
+			<DataPath>Объект.ИмяВетки</DataPath>
+			<ContextMenu name="ИмяВеткиКонтекстноеМеню1" id="108"/>
+			<ExtendedTooltip name="ИмяВеткиРасширеннаяПодсказка1" id="109"/>
+		</InputField>
+		<UsualGroup name="Группа2" id="68">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="69"/>
+			<ChildItems>
+				<InputField name="АдресРепозиторияGit" id="65">
+					<DataPath>Объект.АдресРепозиторияGit</DataPath>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>http или https адрес репозитория на сервере Git</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="АдресРепозиторияGitКонтекстноеМеню1" id="66"/>
+					<ExtendedTooltip name="АдресРепозиторияGitРасширеннаяПодсказка1" id="67"/>
+				</InputField>
+				<Button name="УстановитьАдресРепозиторияGit" id="78">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.УстановитьАдресРепозиторияGit</CommandName>
+					<ExtendedTooltip name="УстановитьАдресРепозиторияGitРасширеннаяПодсказка1" id="79"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа3" id="70">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="71"/>
+			<ChildItems>
+				<InputField name="ПользовательСервераGit" id="72">
+					<DataPath>Объект.ПользовательСервераGit</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь</v8:content>
+						</v8:item>
+					</Title>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пользователь доступа на сервер Git</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ПользовательСервераGitКонтекстноеМеню1" id="73"/>
+					<ExtendedTooltip name="ПользовательСервераGitРасширеннаяПодсказка1" id="74"/>
+				</InputField>
+				<InputField name="ПарольСервераGit" id="75">
+					<DataPath>Объект.ПарольСервераGit</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пароль</v8:content>
+						</v8:item>
+					</Title>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пароль доступа на сервер Git</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ПарольСервераGitКонтекстноеМеню1" id="76"/>
+					<ExtendedTooltip name="ПарольСервераGitРасширеннаяПодсказка1" id="77"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа5" id="118">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="119"/>
+			<ChildItems>
+				<CheckBoxField name="ВыполнятьКоммиты" id="101">
+					<DataPath>Объект.ВыполнятьКоммиты</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыполнятьКоммитыКонтекстноеМеню1" id="102"/>
+					<ExtendedTooltip name="ВыполнятьКоммитыРасширеннаяПодсказка1" id="103"/>
+				</CheckBoxField>
+				<InputField name="КоличествоКоммитов1" id="120">
+					<DataPath>Объект.КоличествоКоммитов</DataPath>
+					<ContextMenu name="КоличествоКоммитов1КонтекстноеМеню1" id="121"/>
+					<ExtendedTooltip name="КоличествоКоммитов1РасширеннаяПодсказка1" id="122"/>
+				</InputField>
+				<InputField name="КоличествоВерсийОбработано" id="87">
+					<DataPath>КоличествоВерсийОбработано</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подготовлено</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КоличествоВерсийОбработаноКонтекстноеМеню1" id="88"/>
+					<ExtendedTooltip name="КоличествоВерсийОбработаноРасширеннаяПодсказка1" id="89"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="ОбрабатыватьВсеОчереди" id="115">
+			<DataPath>Объект.ОбрабатыватьВсеОчереди</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОбрабатыватьВсеОчередиКонтекстноеМеню1" id="116"/>
+			<ExtendedTooltip name="ОбрабатыватьВсеОчередиРасширеннаяПодсказка1" id="117"/>
+		</CheckBoxField>
+		<CheckBoxField name="ЗапретитьИспользованиеОбщихОчередей" id="153">
+			<DataPath>Объект.ЗапретитьИспользованиеОбщихОчередей</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Будут использованы очереди только для текущего хранилища. Общие очереди выполняют обработку версий хранилища в порядке даты создания.</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ЗапретитьИспользованиеОбщихОчередейКонтекстноеМеню" id="154"/>
+			<ExtendedTooltip name="ЗапретитьИспользованиеОбщихОчередейРасширеннаяПодсказка" id="155"/>
+		</CheckBoxField>
+		<LabelField name="СостояниеЗадания" id="28">
+			<DataPath>СостояниеЗадания</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>true</HorizontalStretch>
+			<TextColor>style:SpecialTextColor</TextColor>
+			<ContextMenu name="СостояниеЗаданияКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="СостояниеЗаданияРасширеннаяПодсказка" id="30"/>
+		</LabelField>
+		<UsualGroup name="ГруппаСтатистика" id="80">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статистика</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа статистика</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ExtendedTooltip name="ГруппаСтатистикаРасширеннаяПодсказка" id="81"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаВсего" id="85">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа всего</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа всего</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВсегоРасширеннаяПодсказка" id="86"/>
+					<ChildItems>
+						<InputField name="КоличествоКоммитов" id="82">
+							<DataPath>КоличествоКоммитов</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Коммитов</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="КоличествоКоммитовКонтекстноеМеню1" id="83"/>
+							<ExtendedTooltip name="КоличествоКоммитовРасширеннаяПодсказка1" id="84"/>
+						</InputField>
+						<InputField name="ВсегоВерсий" id="90">
+							<DataPath>ВсегоВерсий</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Всего</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ВсегоВерсийКонтекстноеМеню1" id="91"/>
+							<ExtendedTooltip name="ВсегоВерсийРасширеннаяПодсказка1" id="92"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСкорость" id="93">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа скорость</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа скорость</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСкоростьРасширеннаяПодсказка" id="94"/>
+					<ChildItems>
+						<InputField name="СредняяСкоростьЗаСутки" id="95">
+							<DataPath>СредняяСкоростьЗаСутки</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текущая скорость, шт/час</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текущая средняя скорость за сутки, шт/час</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ContextMenu name="СредняяСкоростьЗаСуткиКонтекстноеМеню1" id="96"/>
+							<ExtendedTooltip name="СредняяСкоростьЗаСуткиРасширеннаяПодсказка1" id="97"/>
+						</InputField>
+						<InputField name="СредняяСкорость" id="98">
+							<DataPath>СредняяСкорость</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Общая скорость, шт/час</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="СредняяСкоростьКонтекстноеМеню1" id="99"/>
+							<ExtendedTooltip name="СредняяСкоростьРасширеннаяПодсказка1" id="100"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаОписание" id="148">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<TitleDataPath>Объект.Описание</TitleDataPath>
+			<ExtendedTooltip name="ГруппаОписаниеРасширеннаяПодсказка" id="149"/>
+			<ChildItems>
+				<InputField name="Наименование" id="178">
+					<DataPath>Объект.Description</DataPath>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="179"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="180"/>
+				</InputField>
+				<InputField name="Описание" id="150">
+					<DataPath>Объект.Описание</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="ОписаниеКонтекстноеМеню" id="151"/>
+					<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="152"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ХранилищаКонфигураций</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СостояниеЗадания" id="2">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АвтообновлениеСостоянияЗадания" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автообновление состояния задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>АвтообновлениеСостоянияЗадания</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="РасписаниеСтрокой" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание строкой</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Расписание" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РегламентноеЗаданиеИспользуется" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конвертировать по расписанию</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КоличествоВерсийОбработано" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество версий обработано</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВсегоВерсий" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего версий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоКоммитов" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество коммитов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СредняяСкоростьЗаСутки" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средняя скорость за сутки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СредняяСкорость" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Средняя скорость</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПодготавливаемыхВерсий" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество подготавливаемых версий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяФайлаЛога" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя файла лога</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийАдрес" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий адрес</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьСостояние" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить состояние</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьСостояние</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗапуститьКонвертацию" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить конвертацию</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.BusinessProcessStart</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗапуститьКонвертацию</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыполнитьКоммиты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить коммиты</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.WriteChanges</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыполнитьКоммиты</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СоздатьРепозиторийGit" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать репозиторий git</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать репозиторий Git и установить начальные настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateInitialImage</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СоздатьРепозиторийGit</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОбновлятьСостояниеАвтоматически" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновлять состояние автоматически (каждые 20 сек)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновлять состояние автоматически</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновлятьСостояниеАвтоматически</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗагрузитьВерсииИзОтчетаПоХранилищу" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить версии из отчета по хранилищу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить версии из отчета по хранилищу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ReadChanges</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗагрузитьВерсииИзОтчетаПоХранилищу</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УстановитьАдресРепозиторияGit" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить адрес репозитория git</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить адрес репозитория git</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateInitialImage</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьАдресРепозиторияGit</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КонвертироватьВФорматEDT" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конвертировать в формат 1C:EDT</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Запустить помощник конвертации репозитория в формат 1C:EDT</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КонвертироватьВФорматEDT</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+		</Command>
+		<Command name="ПроверитьДоступнуюВерсиюEDT" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить доступную версию 1C:EDT</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПроверитьДоступнуюВерсиюEDT</Action>
+		</Command>
+	</Commands>
+</Form>

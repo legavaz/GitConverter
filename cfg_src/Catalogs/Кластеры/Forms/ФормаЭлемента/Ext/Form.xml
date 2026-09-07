@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>true</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<InputField name="АдресСервера" id="1">
+			<DataPath>Объект.АдресСервера</DataPath>
+			<ContextMenu name="АдресСервераКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="АдресСервераРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ТипСУБД" id="4">
+			<DataPath>Объект.ТипСУБД</DataPath>
+			<ContextMenu name="ТипСУБДКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ТипСУБДРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="СерверСУБД" id="7">
+			<DataPath>Объект.СерверСУБД</DataPath>
+			<ContextMenu name="СерверСУБДКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СерверСУБДРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ИмяПользователяСУБД" id="10">
+			<DataPath>Объект.ИмяПользователяСУБД</DataPath>
+			<ContextMenu name="ИмяПользователяСУБДКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ИмяПользователяСУБДРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="ПарольПользователяСУБД" id="13">
+			<DataPath>Объект.ПарольПользователяСУБД</DataPath>
+			<PasswordMode>true</PasswordMode>
+			<ContextMenu name="ПарольПользователяСУБДКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ПарольПользователяСУБДРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="ИмяПользователяКластера" id="16">
+			<DataPath>Объект.ИмяПользователяКластера</DataPath>
+			<ContextMenu name="ИмяПользователяКластераКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ИмяПользователяКластераРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="ПарольПользователяКластера" id="19">
+			<DataPath>Объект.ПарольПользователяКластера</DataPath>
+			<PasswordMode>true</PasswordMode>
+			<ContextMenu name="ПарольПользователяКластераКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ПарольПользователяКластераРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="ПрефиксИмениБазы" id="22">
+			<DataPath>Объект.ПрефиксИмениБазы</DataPath>
+			<ContextMenu name="ПрефиксИмениБазыКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ПрефиксИмениБазыРасширеннаяПодсказка" id="24"/>
+		</InputField>
+		<InputField name="КоличествоВременныхБаз" id="25">
+			<DataPath>Объект.КоличествоВременныхБаз</DataPath>
+			<ContextMenu name="КоличествоВременныхБазКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="КоличествоВременныхБазРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<CheckBoxField name="ИспользоватьДляВременныхБаз" id="28">
+			<DataPath>Объект.ИспользоватьДляВременныхБаз</DataPath>
+			<ContextMenu name="ИспользоватьДляВременныхБазКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ИспользоватьДляВременныхБазРасширеннаяПодсказка" id="30"/>
+		</CheckBoxField>
+		<InputField name="ЭталонВременнойБазы" id="31">
+			<DataPath>Объект.ЭталонВременнойБазы</DataPath>
+			<ContextMenu name="ЭталонВременнойБазыКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ЭталонВременнойБазыРасширеннаяПодсказка" id="33"/>
+		</InputField>
+		<InputField name="Комментарий" id="34">
+			<DataPath>Объект.Комментарий</DataPath>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="35"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="36"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Кластеры</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+</Form>
