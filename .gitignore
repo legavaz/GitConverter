@@ -1,0 +1,25 @@
+# Отладочные временные каталоги и логи
+cfg_ref/
+cfg_phase1/
+cfg_probe/
+cfg_pB/
+cfg_tB/
+cfg_test*/
+cfg_t?/
+
+# Логи выгрузки/загрузки
+*.log
+dump_*.txt
+
+# Временные скрипты
+_tmp_*.ps1
+_tmp_*.bat
+
+# 1С: характерные служебные файлы
+*.mvf
+*.1CD
+*.cfl
+*.pfl
+*.bl
+*.log
+1Cv8Log/
