@@ -11,7 +11,7 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Settings xsi:type="DynamicList">
-				<MainTable>Catalog.Кластеры</MainTable>
+				<MainTable>Catalog.ноКластеры</MainTable>
 			</Settings>
 		</Attribute>
 	</Attributes>

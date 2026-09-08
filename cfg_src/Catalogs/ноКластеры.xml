@@ -2,29 +2,29 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Catalog uuid="b4e6f8a0-2c4e-4f6a-8b9d-0e1f2a3b4c5d">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.Кластеры" category="Object">
+			<xr:GeneratedType name="CatalogObject.ноКластеры" category="Object">
 				<xr:TypeId>1a2b3c4d-5e6f-4a8b-9c0d-1e2f3a4b5c6d</xr:TypeId>
 				<xr:ValueId>2b3c4d5e-6f7a-4b8c-9d0e-1f2a3b4c5d6e</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.Кластеры" category="Ref">
+			<xr:GeneratedType name="CatalogRef.ноКластеры" category="Ref">
 				<xr:TypeId>3c4d5e6f-7a8b-4c9d-0e1f-2a3b4c5d6e7f</xr:TypeId>
 				<xr:ValueId>4d5e6f7a-8b9c-4d0e-1f2a-3b4c5d6e7f8a</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.Кластеры" category="Selection">
+			<xr:GeneratedType name="CatalogSelection.ноКластеры" category="Selection">
 				<xr:TypeId>5e6f7a8b-9c0d-4e1f-2a3b-4c5d6e7f8a9b</xr:TypeId>
 				<xr:ValueId>6f7a8b9c-0d1e-4f2a-3b4c-5d6e7f8a9b0c</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.Кластеры" category="List">
+			<xr:GeneratedType name="CatalogList.ноКластеры" category="List">
 				<xr:TypeId>7a8b9c0d-1e2f-4a3b-4c5d-6e7f8a9b0c1d</xr:TypeId>
 				<xr:ValueId>8b9c0d1e-2f3a-4b4c-5d6e-7f8a9b0c1d2e</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.Кластеры" category="Manager">
+			<xr:GeneratedType name="CatalogManager.ноКластеры" category="Manager">
 				<xr:TypeId>9c0d1e2f-3a4b-4c5d-6e7f-8a9b0c1d2e3f</xr:TypeId>
 				<xr:ValueId>0d1e2f3a-4b5c-4d6e-7f8a-9b0c1d2e3f4a</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Кластеры</Name>
+			<Name>ноКластеры</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -45,8 +45,14 @@
 			<EditType>InDialog</EditType>
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
-			<DefaultObjectForm>Catalog.Кластеры.Form.ФормаЭлемента</DefaultObjectForm>
-			<DefaultListForm>Catalog.Кластеры.Form.ФормаСписка</DefaultListForm>
+			<InputByString>
+				<xr:Field>Catalog.ноКластеры.StandardAttribute.Description</xr:Field>
+			</InputByString>
+			<SearchStringModeOnInputByString>AnyPart</SearchStringModeOnInputByString>
+			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
+			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
+			<DefaultObjectForm>Catalog.ноКластеры.Form.ФормаЭлемента</DefaultObjectForm>
+			<DefaultListForm>Catalog.ноКластеры.Form.ФормаСписка</DefaultListForm>
 			<DefaultChoiceForm/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<DataLockControlMode>Managed</DataLockControlMode>
@@ -94,7 +100,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.ТипыСУБД</v8:Type>
+						<v8:Type>cfg:EnumRef.ноТипыСУБД</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<FillChecking>DontCheck</FillChecking>

@@ -1,26 +1,26 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
-	<Enum uuid="e9d5a1c2-9f4b-4b6d-9f2e-3c8a1b7d4e05">
+	<Enum uuid="7c3a5e7f-9b1d-4f6a-8c0e-1d3f5a7b9c2e">
 		<InternalInfo>
-			<xr:GeneratedType name="EnumRef.ТипыСУБД" category="Ref">
-				<xr:TypeId>6a8d3f11-4b2c-4e5a-8f7d-2c9a1e4b8d55</xr:TypeId>
-				<xr:ValueId>3b7f9c2e-5a4d-4f8b-9a1c-7e2d5f6a3b84</xr:ValueId>
+			<xr:GeneratedType name="EnumRef.ноСостоянияВременныхБаз" category="Ref">
+				<xr:TypeId>2a4c6e8f-0b1d-3f5a-7b9c-1e3f5a7b9c2e</xr:TypeId>
+				<xr:ValueId>4d6f8a0b-2c4e-6f8a-0b2d-4e6f8a0b2c4e</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumManager.ТипыСУБД" category="Manager">
-				<xr:TypeId>9a2c4e6f-1b3d-5f7a-8c9e-0d1f2a3b4c5d</xr:TypeId>
-				<xr:ValueId>4d6f8a0c-2b4e-6f8a-0c2e-4d6f8a0c2e</xr:ValueId>
+			<xr:GeneratedType name="EnumManager.ноСостоянияВременныхБаз" category="Manager">
+				<xr:TypeId>8a0c2e4f-6b9d-1f3a-5c7e-9a1b3d5f7a8c</xr:TypeId>
+				<xr:ValueId>1d3f5a7b-9c0e-2d4f-6a8b-1c3e5f7a9b0d</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="EnumList.ТипыСУБД" category="List">
-				<xr:TypeId>7e9b1c3d-5f8a-2c4e-6f9a-1b3d5f7e9b1c</xr:TypeId>
-				<xr:ValueId>8a0c2e4f-6f9b-1d3e-5f8a-2c4e6f9b1d3e</xr:ValueId>
+			<xr:GeneratedType name="EnumList.ноСостоянияВременныхБаз" category="List">
+				<xr:TypeId>5f7a9b1d-3c5e-7f9a-1b3d-5e7f9a1b3d5e</xr:TypeId>
+				<xr:ValueId>9b1d3f5a-7c9e-1b3d-5f7a-9b1d3f5a7c9e</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ТипыСУБД</Name>
+			<Name>ноСостоянияВременныхБаз</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Типы СУБД</v8:content>
+					<v8:content>Состояния временных баз</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -38,25 +38,37 @@
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 		</Properties>
 		<ChildObjects>
-			<EnumValue uuid="5a1c3e5f-7b9d-2f4a-8c0e-4a6f8b1d3e5f">
+			<EnumValue uuid="3c5e7f9a-0b1d-2f4a-6b8c-1e3f5a7b9c0d">
 				<Properties>
-					<Name>MSSQL</Name>
+					<Name>Свободна</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Microsoft SQL Server</v8:content>
+							<v8:content>Свободна</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="6b2d4f6a-8c0e-3a5f-9d1b-5b7d9c1e3f6a">
+			<EnumValue uuid="4d6e8f0a-1c3e-5a7b-9a0d-2f4a6b8c1e3f">
 				<Properties>
-					<Name>PostgreSQL</Name>
+					<Name>Занята</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>PostgreSQL</v8:content>
+							<v8:content>Занята</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5e7f9a0b-2d4f-6a8c-1a3e-5a7b9a0c2e4f">
+				<Properties>
+					<Name>ТребуетПересоздания</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Требует пересоздания</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

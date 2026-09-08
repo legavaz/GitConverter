@@ -43,7 +43,7 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:CatalogObject.ВременныеБазы</v8:Type>
+				<v8:Type>cfg:CatalogObject.ноВременныеБазы</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>

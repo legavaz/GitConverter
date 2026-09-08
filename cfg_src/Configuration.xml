@@ -305,16 +305,16 @@
 			<FunctionalOption>ИспользоватьОчередиВыполнения</FunctionalOption>
 			<Constant>ИспользоватьОчередиВыполнения</Constant>
 			<Constant>ПутьКВерсиямПлатформыНаСервере</Constant>
-			<Catalog>ВременныеБазы</Catalog>
+			<Catalog>ноВременныеБазы</Catalog>
 			<Catalog>ВерсииХранилища</Catalog>
-			<Catalog>Кластеры</Catalog>
+			<Catalog>ноКластеры</Catalog>
 			<Catalog>КопииХранилищКонфигурации</Catalog>
 			<Catalog>ОчередиВыполнения</Catalog>
 			<Catalog>ХранилищаКонфигураций</Catalog>
 			<Enum>ОперацииОчереди</Enum>
 			<Enum>СостоянияВерсии</Enum>
-			<Enum>СостоянияВременныхБаз</Enum>
-			<Enum>ТипыСУБД</Enum>
+			<Enum>ноСостоянияВременныхБаз</Enum>
+			<Enum>ноТипыСУБД</Enum>
 			<Report>СкоростьКонвертации</Report>
 			<DataProcessor>РегламентныеИФоновыеЗадания</DataProcessor>
 			<DataProcessor>КонвертацияВФорматEDT</DataProcessor>

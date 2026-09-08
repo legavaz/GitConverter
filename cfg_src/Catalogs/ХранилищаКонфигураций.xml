@@ -1626,7 +1626,7 @@
 				</Synonym>
 				<Comment/>
 				<Type>
-					<v8:Type>cfg:CatalogRef.Кластеры</v8:Type>
+					<v8:Type>cfg:CatalogRef.ноКластеры</v8:Type>
 				</Type>
 				<PasswordMode>false</PasswordMode>
 				<Format/>
@@ -1655,7 +1655,6 @@
 			</Properties>
 		</Attribute>
 		<Form>ФормаЭлемента</Form>
-			<Form>ФормаЭлемента</Form>
 			<Form>ФормаСписка</Form>
 		</ChildObjects>
 	</Catalog>

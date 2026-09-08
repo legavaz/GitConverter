@@ -11,7 +11,7 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Settings xsi:type="DynamicList">
-				<MainTable>Catalog.ВременныеБазы</MainTable>
+				<MainTable>Catalog.ноВременныеБазы</MainTable>
 			</Settings>
 		</Attribute>
 	</Attributes>
