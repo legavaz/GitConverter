@@ -88,13 +88,13 @@
 					<v8:content>Серверные временные базы</v8:content>
 				</v8:item>
 			</Title>
-			<Group>Vertical</Group>
+			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
-			<ShowTitle>true</ShowTitle>
 			<ExtendedTooltip name="ГруппаВременныеБазыРасширеннаяПодсказка" id="182"/>
 			<ChildItems>
 				<CheckBoxField name="ИспользоватьСерверныеВременныеБазы" id="183">
 					<DataPath>Объект.ИспользоватьСерверныеВременныеБазы</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ИспользоватьСерверныеВременныеБазыКонтекстноеМеню" id="184"/>
 					<ExtendedTooltip name="ИспользоватьСерверныеВременныеБазыРасширеннаяПодсказка" id="185"/>
 				</CheckBoxField>
@@ -106,6 +106,7 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа1" id="57">
+			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="58"/>
@@ -120,17 +121,33 @@
 					<ContextMenu name="ПоследняяВерсияКонтекстноеМеню1" id="63"/>
 					<ExtendedTooltip name="ПоследняяВерсияРасширеннаяПодсказка1" id="64"/>
 				</InputField>
-				<Button name="КонвертироватьВФорматEDT" id="166">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.КонвертироватьВФорматEDT</CommandName>
-					<TextColor>style:SpecialTextColor</TextColor>
-					<ExtendedTooltip name="КонвертироватьВФорматEDTРасширеннаяПодсказка" id="167"/>
-				</Button>
-				<Button name="ПроверитьДоступнуюВерсиюEDT" id="168">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.ПроверитьДоступнуюВерсиюEDT</CommandName>
-					<ExtendedTooltip name="ПроверитьДоступнуюВерсиюEDTРасширеннаяПодсказка" id="169"/>
-				</Button>
+				<CommandBar name="Группа8" id="189">
+					<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="190"/>
+					<ChildItems>
+						<Popup name="Группа9" id="191">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>EDT</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="192"/>
+							<ChildItems>
+								<Button name="ПроверитьДоступнуюВерсиюEDT" id="168">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ПроверитьДоступнуюВерсиюEDT</CommandName>
+									<ExtendedTooltip name="ПроверитьДоступнуюВерсиюEDTРасширеннаяПодсказка" id="169"/>
+								</Button>
+								<Button name="КонвертироватьВФорматEDT" id="166">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.КонвертироватьВФорматEDT</CommandName>
+									<TextColor>style:SpecialTextColor</TextColor>
+									<ExtendedTooltip name="КонвертироватьВФорматEDTРасширеннаяПодсказка" id="167"/>
+								</Button>
+							</ChildItems>
+						</Popup>
+					</ChildItems>
+				</CommandBar>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаРегламентныйЗапуск" id="44">
@@ -701,7 +718,7 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		</ChildItems>
+	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>

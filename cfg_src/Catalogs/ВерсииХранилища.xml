@@ -840,46 +840,47 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-		<Attribute uuid="61b0eb00-3128-4b7e-b5e4-e38b2abbbfce">
-			<Properties>
-				<Name>ВременнаяБаза</Name>
-				<Synonym>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Временная база</v8:content>
-					</v8:item>
-				</Synonym>
-				<Comment/>
-				<Type>
-					<v8:Type>cfg:CatalogRef.ноВременныеБазы</v8:Type>
-				</Type>
-				<PasswordMode>false</PasswordMode>
-				<Format/>
-				<EditFormat/>
-				<ToolTip/>
-				<MarkNegatives>false</MarkNegatives>
-				<Mask/>
-				<MultiLine>false</MultiLine>
-				<ExtendedEdit>false</ExtendedEdit>
-				<MinValue xsi:nil="true"/>
-				<MaxValue xsi:nil="true"/>
-				<FillFromFillingValue>false</FillFromFillingValue>
-				<FillValue xsi:nil="true"/>
-				<FillChecking>DontCheck</FillChecking>
-				<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-				<ChoiceParameterLinks/>
-				<ChoiceParameters/>
-				<QuickChoice>Auto</QuickChoice>
-				<CreateOnInput>Auto</CreateOnInput>
-				<ChoiceForm/>
-				<LinkByType/>
-				<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-				<Indexing>DontIndex</Indexing>
-				<FullTextSearch>Use</FullTextSearch>
-				<DataHistory>Use</DataHistory>
-			</Properties>
-		</Attribute>
-		<TabularSection uuid="e384f3de-6d17-4ca9-aeca-1862aaf10be0">
+			<Attribute uuid="61b0eb00-3128-4b7e-b5e4-e38b2abbbfce">
+				<Properties>
+					<Name>ВременнаяБаза</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Временная база</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ноВременныеБазы</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="e384f3de-6d17-4ca9-aeca-1862aaf10be0">
 				<InternalInfo>
 					<xr:GeneratedType name="CatalogTabularSection.ВерсииХранилища.Состав" category="TabularSection">
 						<xr:TypeId>6275aa89-a315-4d55-b16d-907c074a032e</xr:TypeId>

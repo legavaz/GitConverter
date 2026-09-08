@@ -299,6 +299,7 @@
 			<CommonModule>РегламентныеЗаданияСлужебный</CommonModule>
 			<CommonModule>СтандартныеПодсистемыСервер</CommonModule>
 			<CommonModule>СтроковыеФункцииКлиентСервер</CommonModule>
+			<CommonModule>ноСозданиеБазы</CommonModule>
 			<ScheduledJob>ВыгрузкаВерсииИзКопииХранилища</ScheduledJob>
 			<ScheduledJob>КонвертацияХранилища</ScheduledJob>
 			<ScheduledJob>ОбработкаОчереди</ScheduledJob>
