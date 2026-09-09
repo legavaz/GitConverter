@@ -11,6 +11,8 @@ cfg_t?/
 # Логи выгрузки/загрузки
 *.log
 dump_*.txt
+mcp-server.log.*
+cfg_src/.code-index/
 
 # Временные скрипты
 _tmp_*.ps1

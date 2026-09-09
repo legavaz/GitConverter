@@ -1,0 +1,71 @@
+{
+  "$schema": "https://1c-syntax.github.io/bsl-language-server/configuration/schema.json",
+  "language": "ru",
+  "sendErrors": "never",
+  "configurationRoot": "cf",
+  "src": {
+    "mode": "SRC",
+    "path": "E:/project/0509 git converter/cfg_src"
+  },
+  "excludePaths": [
+    "**/.git/**",
+    "**/build/**"
+  ],
+  "diagnostics": {
+    "computeTrigger": "onSave",
+    "analyzeOnStart": true,
+    "skipSupport": "never",
+    "ordinaryAppSupport": false,
+    "metadata": {
+      "LineLength": {
+        "maxLineLength": 120
+      },
+      "MethodSize": {
+        "maxMethodSize": 200
+      }
+    }
+  },
+  "formatting": {
+    "useKeywordsFormatting": true,
+    "useUpperCaseForOrNotAndKeywords": true,
+    "useOnTypeFormatting": true
+  },
+  "semanticTokens": {
+    "strTemplateMethods": [
+      "СтроковыеФункцииКлиентСервер.ПодставитьПараметрыВСтроку",
+      "ПодставитьПараметрыВСтроку",
+      "СтрШаблон"
+    ]
+  },
+  "references": {
+    "commonModuleAccessors": [
+      "ОбщегоНазначения.ОбщийМодуль",
+      "ОбщегоНазначенияКлиент.ОбщийМодуль",
+      "ОбщегоНазначенияСервер.ОбщийМодуль",
+      "ОбщегоНазначенияКлиентСервер.ОбщийМодуль",
+      "ОбщегоНазначенияПовтИсп.ОбщийМодуль",
+      "ОбщийМодуль"
+    ]
+  },
+  "v8platform": {
+    "enabled": true
+  },
+  "codeLens": {
+    "parameters": {
+      "cognitiveComplexity": false,
+      "cyclomaticComplexity": false
+    }
+  },
+  "inlayHint": {
+    "parameters": {
+      "methodCall": true,
+      "variableType": false
+    }
+  },
+  "workspaceSymbol": {
+    "syncFuzzySearch": true
+  },
+  "documentLink": {
+    "showDiagnosticDescription": true
+  }
+}

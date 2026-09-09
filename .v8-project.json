@@ -1,4 +1,16 @@
 {
   "editingAllowedCheck": "off",
-  "comment": "Конфигурация ГитКонвертер разрабатывается напрямую из XML-выгрузки, редактирование на поддержке отключено."
+  "comment": "Конфигурация ГитКонвертер разрабатывается напрямую из XML-выгрузки, редактирование на поддержке отключено.",
+  "databases": [
+    {
+      "id": "dev",
+      "name": "ГитКонвертер",
+      "type": "file",
+      "path": "E:\\file_bases\\git_converter",
+      "aliases": ["dev", "гитконвертер", "git_converter"],
+      "branches": ["lega-master", "master"],
+      "configSrc": "E:\\project\\0509 git converter\\cfg_src"
+    }
+  ],
+  "default": "dev"
 }
