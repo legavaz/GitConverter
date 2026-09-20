@@ -92,7 +92,7 @@
 		<Metadata name="Catalog.ХранилищаКонфигураций.Form.ФормаЭлемента.Help" id="6cc206d4-d733-4a4a-8ed2-adf76440f6af.1" configVersion="19a4952406ad66409bd472c64d73c24e00000000"/>
 		<Metadata name="Catalog.ХранилищаКонфигураций.Help" id="58570c20-db1f-43f1-af51-47fbbb1a4807.1" configVersion="b15cf5e00383694dabcd691f72b4aff300000000"/>
 		<Metadata name="Catalog.ХранилищаКонфигураций.ObjectModule" id="58570c20-db1f-43f1-af51-47fbbb1a4807.0" configVersion="9ae046430c3a3041b2916b21146216c800000000"/>
-		<Metadata name="Catalog.ноВременныеБазы" id="3a5b7c9d-0e1f-4f6a-8b9c-2d4e6f8a0b1c" configVersion="9d534a6825a36c4a823b9fb8adf8ff6b00000000">
+		<Metadata name="Catalog.ноВременныеБазы" id="3a5b7c9d-0e1f-4f6a-8b9c-2d4e6f8a0b1c" configVersion="f405c1bf92f4d745bc790f5a438b129300000000">
 			<Metadata name="Catalog.ноВременныеБазы.Attribute.ДатаПоследнегоОсвобождения" id="0c2d3e4f-7b8c-9e0f-1a2b-8c9d0e1f2a3b"/>
 			<Metadata name="Catalog.ноВременныеБазы.Attribute.Кластер" id="4c6e8f0a-1b3d-4f6a-8b9c-2d4e6f8a0b1c"/>
 			<Metadata name="Catalog.ноВременныеБазы.Attribute.ИмяБазыНаСервере" id="5d7f9a0b-2c4e-5f6b-8c9d-3e5f7a8b9c0d"/>
@@ -101,11 +101,11 @@
 			<Metadata name="Catalog.ноВременныеБазы.Attribute.ДатаЗанятия" id="8a0b1c2d-5f7a-8c9d-0e1a-6a7b8c9d0e1f"/>
 			<Metadata name="Catalog.ноВременныеБазы.Attribute.КоличествоИспользований" id="9b1c2d3e-6a7b-8d9e-0f1a-7b8c9d0e1f2a"/>
 		</Metadata>
-		<Metadata name="Catalog.ноВременныеБазы.Form.ФормаСписка" id="e45dc782-5258-462c-9229-5f3568f9072e" configVersion="0965c0c2416b7c448fb203ff000d298b00000000"/>
-		<Metadata name="Catalog.ноВременныеБазы.Form.ФормаСписка.Form" id="e45dc782-5258-462c-9229-5f3568f9072e.0" configVersion="804123d1ca68d34db747c89e1df9714200000000"/>
-		<Metadata name="Catalog.ноВременныеБазы.Form.ФормаЭлемента" id="c2d8d2b2-a0f7-4934-87c0-e2a390d8cb0c" configVersion="72d168c310f0154ebe4f33dee581acca00000000"/>
-		<Metadata name="Catalog.ноВременныеБазы.Form.ФормаЭлемента.Form" id="c2d8d2b2-a0f7-4934-87c0-e2a390d8cb0c.0" configVersion="a36e1d842f221e42989ac91080915aac00000000"/>
-		<Metadata name="Catalog.ноВременныеБазы.ManagerModule" id="3a5b7c9d-0e1f-4f6a-8b9c-2d4e6f8a0b1c.3" configVersion="6a91240a30577349be4af2a8608333f700000000"/>
+		<Metadata name="Catalog.ноВременныеБазы.Form.ФормаСписка" id="e45dc782-5258-462c-9229-5f3568f9072e" configVersion="264b3ecf6c97c342b4eff38eb0ec94fe00000000"/>
+		<Metadata name="Catalog.ноВременныеБазы.Form.ФормаСписка.Form" id="e45dc782-5258-462c-9229-5f3568f9072e.0" configVersion="4e397b96a3299f49bcab965f099af24900000000"/>
+		<Metadata name="Catalog.ноВременныеБазы.Form.ФормаЭлемента" id="c2d8d2b2-a0f7-4934-87c0-e2a390d8cb0c" configVersion="dbe1fc2e80e233408f9d530666e583af00000000"/>
+		<Metadata name="Catalog.ноВременныеБазы.Form.ФормаЭлемента.Form" id="c2d8d2b2-a0f7-4934-87c0-e2a390d8cb0c.0" configVersion="7cabf33c7148ef4bbcb9ac75d8ad94b200000000"/>
+		<Metadata name="Catalog.ноВременныеБазы.ManagerModule" id="3a5b7c9d-0e1f-4f6a-8b9c-2d4e6f8a0b1c.3" configVersion="c84485b6fd93ab4dac5ae8075717805d00000000"/>
 		<Metadata name="Catalog.ноКластеры" id="b4e6f8a0-2c4e-4f6a-8b9d-0e1f2a3b4c5d" configVersion="c356a4c09045d84ea6b637d017c5981900000000">
 			<Metadata name="Catalog.ноКластеры.Attribute.АдресСервера" id="0a4c6e8f-1b3d-4f6a-8b9c-2d4e6f8a0b1c"/>
 			<Metadata name="Catalog.ноКластеры.Attribute.ЭталонВременнойБазы" id="0e4f5a6b-1f2a-3c4d-5e6f-2a3b4c5d6e7f"/>
@@ -148,10 +148,10 @@
 		<Metadata name="CommonModule.РегламентныеЗаданияСлужебный.Module" id="027170e8-f577-4db1-80e0-e36c380b9d4c.0" configVersion="8bb1967ec6b63c4595adf5179ba8a5c500000000"/>
 		<Metadata name="CommonModule.СтандартныеПодсистемыСервер" id="365d60bd-5ff8-4f93-8a7e-8e54d477d5f4" configVersion="1d2f705142fab746b3ab274bbbe506a000000000"/>
 		<Metadata name="CommonModule.СтандартныеПодсистемыСервер.Module" id="365d60bd-5ff8-4f93-8a7e-8e54d477d5f4.0" configVersion="40c3921044c3814490027cb105db1f3d00000000"/>
-		<Metadata name="CommonModule.СтроковыеФункцииКлиентСервер" id="ab0dafce-f4a7-4209-a244-e97dbc1fd674" configVersion="db42fc279996ed4da9ea9dda63968a0800000000"/>
-		<Metadata name="CommonModule.СтроковыеФункцииКлиентСервер.Module" id="ab0dafce-f4a7-4209-a244-e97dbc1fd674.0" configVersion="d32fce2ac0f80d4783ddb6dd410d052300000000"/>
-		<Metadata name="CommonModule.ноСозданиеБазы" id="a372ac9b-c48f-441f-8e0a-0de0a3c9897f" configVersion="fc47a35145adb944802e349b8d4b897a00000000"/>
-		<Metadata name="CommonModule.ноСозданиеБазы.Module" id="a372ac9b-c48f-441f-8e0a-0de0a3c9897f.0" configVersion="8a0063bc42c37b40b69401b39a684d2c00000000"/>
+		<Metadata name="CommonModule.СтроковыеФункцииКлиентСервер" id="ab0dafce-f4a7-4209-a244-e97dbc1fd674" configVersion="956a1e9b552d634fbb6703b5cee5a8b500000000"/>
+		<Metadata name="CommonModule.СтроковыеФункцииКлиентСервер.Module" id="ab0dafce-f4a7-4209-a244-e97dbc1fd674.0" configVersion="68facff0e5c46b49afbe38df05732a7900000000"/>
+		<Metadata name="CommonModule.ноСозданиеБазы" id="a372ac9b-c48f-441f-8e0a-0de0a3c9897f" configVersion="bf6fbc7c43ac33459f9ceabe4daf1daa00000000"/>
+		<Metadata name="CommonModule.ноСозданиеБазы.Module" id="a372ac9b-c48f-441f-8e0a-0de0a3c9897f.0" configVersion="c8f370636d19cd478025e15386716df600000000"/>
 		<Metadata name="CommonPicture.ВыполнитьРегламентноеЗаданиеВручную" id="d80dbb9d-016d-487e-a699-9c05ba17d068" configVersion="56af6aac815ca64692b6518a770cf17c00000000"/>
 		<Metadata name="CommonPicture.ВыполнитьРегламентноеЗаданиеВручную.Picture" id="d80dbb9d-016d-487e-a699-9c05ba17d068.0" configVersion="fff3e614ecc5b443b7eddc6aabaf5b1100000000"/>
 		<Metadata name="CommonPicture.ДлительнаяОперация48" id="d5c559dd-b4cf-4b4f-bb3f-52a99c4c6255" configVersion="12ba22c1d6bfe344a3516dd70988d0ea00000000"/>
