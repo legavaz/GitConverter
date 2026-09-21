@@ -34,6 +34,11 @@
 				<CommandName>Form.Command.ЗагрузитьВерсииИзОтчетаПоХранилищу</CommandName>
 				<ExtendedTooltip name="ФормаЗагрузитьВерсииИзОтчетаПоХранилищуРасширеннаяПодсказка1" id="56"/>
 			</Button>
+			<Button name="ФормаОсвободитьВременныеБазы" id="172">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОсвободитьВременныеБазы</CommandName>
+				<ExtendedTooltip name="ФормаОсвободитьВременныеБазыРасширеннаяПодсказка" id="173"/>
+			</Button>
 			<Button name="ФормаПроверитьДоступнуюВерсиюEDT" id="170">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ПроверитьДоступнуюВерсиюEDT</CommandName>
@@ -1060,6 +1065,22 @@
 				</v8:item>
 			</Title>
 			<Action>ПроверитьДоступнуюВерсиюEDT</Action>
+		</Command>
+		<Command name="ОсвободитьВременныеБазы" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Освободить временные базы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Освободить все временные базы, занятые версиями этого хранилища</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОсвободитьВременныеБазы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 </Form>

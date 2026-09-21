@@ -18,6 +18,9 @@ cfg_src/.code-index/
 _tmp_*.ps1
 _tmp_*.bat
 
+# Скиллы opencode (cc-1c-skills) — не в репозиторий
+.opencode/skills/
+
 # 1С: характерные служебные файлы
 *.mvf
 *.1CD
