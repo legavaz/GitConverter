@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="СоздатьБазу" id="27">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьБазу</CommandName>
+				<ExtendedTooltip name="СоздатьБазуРасширеннаяПодсказка" id="28"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="52"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПраво" id="49">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПравоРасширеннаяПодсказка" id="50"/>
+					<ChildItems>
+						<InputField name="Наименование" id="1">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="OnChange">НаименованиеПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Кластер" id="4">
+							<DataPath>Объект.Кластер</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КластерКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="КластерРасширеннаяПодсказка" id="6"/>
+							<Events>
+								<Event name="OnChange">КластерПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ИмяБазыНаСервере" id="7">
+							<DataPath>Объект.ИмяБазыНаСервере</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИмяБазыНаСервереКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ИмяБазыНаСервереРасширеннаяПодсказка" id="9"/>
+						</InputField>
+						<InputField name="Хранилище" id="29">
+							<DataPath>Объект.Хранилище</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ХранилищеКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="ХранилищеРасширеннаяПодсказка" id="31"/>
+						</InputField>
+						<UsualGroup name="Группа1" id="25">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="26"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаЛево1" id="53">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа лево1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа лево1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЛево1РасширеннаяПодсказка" id="54"/>
+									<ChildItems>
+										<InputField name="ДатаЗанятия" id="16">
+											<DataPath>Объект.ДатаЗанятия</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ДатаЗанятияКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="ДатаЗанятияРасширеннаяПодсказка" id="18"/>
+										</InputField>
+										<InputField name="ДатаПоследнегоОсвобождения" id="22">
+											<DataPath>Объект.ДатаПоследнегоОсвобождения</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ДатаПоследнегоОсвобожденияКонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="ДатаПоследнегоОсвобожденияРасширеннаяПодсказка" id="24"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПраво1" id="55">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа лево1</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа лево1</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПраво1РасширеннаяПодсказка" id="56"/>
+									<ChildItems>
+										<LabelField name="КоличествоИспользований" id="19">
+											<DataPath>Объект.КоличествоИспользований</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="КоличествоИспользованийКонтекстноеМеню" id="20"/>
+											<ExtendedTooltip name="КоличествоИспользованийРасширеннаяПодсказка" id="21"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаЛево" id="47">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="48"/>
+					<ChildItems>
+						<InputField name="Состояние" id="10">
+							<DataPath>Объект.Состояние</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СостояниеКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="ВерсияХранилища" id="13">
+							<DataPath>Объект.ВерсияХранилища</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ВерсияХранилищаКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ВерсияХранилищаРасширеннаяПодсказка" id="15"/>
+						</InputField>
+						<UsualGroup name="ГруппаПользователь" id="45">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пользователь</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пользователь</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>#FFFF99</BackColor>
+							<ExtendedTooltip name="ГруппаПользовательРасширеннаяПодсказка" id="46"/>
+							<ChildItems>
+								<InputField name="ИмяПользователяХранилища" id="34">
+									<DataPath>Объект.ИмяПользователяХранилища</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИмяПользователяХранилищаКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ИмяПользователяХранилищаРасширеннаяПодсказка" id="36"/>
+								</InputField>
+								<InputField name="ПарольПользователяХранилища" id="37">
+									<DataPath>Объект.ПарольПользователяХранилища</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПарольПользователяХранилищаКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="ПарольПользователяХранилищаРасширеннаяПодсказка" id="39"/>
+								</InputField>
+								<UsualGroup name="Группа2" id="59">
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="60"/>
+									<ChildItems>
+										<PictureDecoration name="Декорация1" id="61">
+											<Width>16</Width>
+											<Height>1</Height>
+											<ContextMenu name="Декорация1КонтекстноеМеню" id="62"/>
+											<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="63"/>
+										</PictureDecoration>
+										<Button name="СделатьПользователяХранилища1" id="57">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.СделатьПользователяХранилища</CommandName>
+											<ExtendedTooltip name="СделатьПользователяХранилища1РасширеннаяПодсказка" id="58"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа3" id="67">
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="68"/>
+									<ChildItems>
+										<InputField name="ПользовательХранилища" id="42">
+											<DataPath>Объект.ПользовательХранилища</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПользовательХранилищаКонтекстноеМеню" id="43"/>
+											<ExtendedTooltip name="ПользовательХранилищаРасширеннаяПодсказка" id="44"/>
+										</InputField>
+										<CheckBoxField name="ПользовательХранилищаАдминистратор" id="64">
+											<DataPath>Объект.ПользовательХранилища.Администратор</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Адм.</v8:content>
+												</v8:item>
+											</Title>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПользовательХранилищаАдминистраторКонтекстноеМеню" id="65"/>
+											<ExtendedTooltip name="ПользовательХранилищаАдминистраторРасширеннаяПодсказка" id="66"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ноВременныеБазы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьБазу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать базу на кластере</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СоздатьБазу</Action>
+		</Command>
+		<Command name="СделатьПользователяХранилища" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделать пользователя хранилища</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать пользователя хранилища и зарегистрировать его в справочнике</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СделатьПользователяХранилища</Action>
+		</Command>
+	</Commands>
+</Form>
