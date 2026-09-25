@@ -55,7 +55,7 @@
 		<Metadata name="Catalog.ОчередиВыполнения.Form.ФормаЭлемента.Form" id="1c0a4154-eaef-4d71-a178-18fa4775eb23.0" configVersion="99d333f27c21e9429907cc251c28da5d00000000"/>
 		<Metadata name="Catalog.ОчередиВыполнения.Help" id="de543316-87a9-424b-926e-5dd2b29aa8e8.1" configVersion="05e8125dfc7a2944a0460cee6c13616000000000"/>
 		<Metadata name="Catalog.ОчередиВыполнения.ObjectModule" id="de543316-87a9-424b-926e-5dd2b29aa8e8.0" configVersion="8ba1d24dbd84b946b64825309295ebd100000000"/>
-		<Metadata name="Catalog.ХранилищаКонфигураций" id="58570c20-db1f-43f1-af51-47fbbb1a4807" configVersion="c29cbbfd6e794146b34a20fcd23fe9b300000000">
+		<Metadata name="Catalog.ХранилищаКонфигураций" id="58570c20-db1f-43f1-af51-47fbbb1a4807" configVersion="98ffa5f24e234f4e87c093938e99ff9900000000">
 			<Metadata name="Catalog.ХранилищаКонфигураций.Attribute.КонвертироватьВФорматEDT" id="02dee9a8-9e7c-4ecd-8dc5-46666fa8bb52"/>
 			<Metadata name="Catalog.ХранилищаКонфигураций.Attribute.ПарольСервераGit" id="06cfe4da-d495-426e-82fe-8e2611ac68f1"/>
 			<Metadata name="Catalog.ХранилищаКонфигураций.Attribute.УдалятьКонфигурацииПоставщиков" id="125b0fab-30a6-4afd-84a5-856d3a3d375f"/>
@@ -89,11 +89,11 @@
 		</Metadata>
 		<Metadata name="Catalog.ХранилищаКонфигураций.Form.ФормаСписка" id="d3f5a135-b694-478a-ae64-5e8a5f389c77" configVersion="0378d7b7c73b244d84d41a5132ff324d00000000"/>
 		<Metadata name="Catalog.ХранилищаКонфигураций.Form.ФормаСписка.Form" id="d3f5a135-b694-478a-ae64-5e8a5f389c77.0" configVersion="204bbbd54013df4fa33b3b297f62093700000000"/>
-		<Metadata name="Catalog.ХранилищаКонфигураций.Form.ФормаЭлемента" id="6cc206d4-d733-4a4a-8ed2-adf76440f6af" configVersion="1d4803e76a6bef45a4ab6aef8320af5100000000"/>
-		<Metadata name="Catalog.ХранилищаКонфигураций.Form.ФормаЭлемента.Form" id="6cc206d4-d733-4a4a-8ed2-adf76440f6af.0" configVersion="8c110868507c284cb3a96ad00437c4d500000000"/>
+		<Metadata name="Catalog.ХранилищаКонфигураций.Form.ФормаЭлемента" id="6cc206d4-d733-4a4a-8ed2-adf76440f6af" configVersion="ba04a6be186b4c4080e2dd5ba399d8ef00000000"/>
+		<Metadata name="Catalog.ХранилищаКонфигураций.Form.ФормаЭлемента.Form" id="6cc206d4-d733-4a4a-8ed2-adf76440f6af.0" configVersion="638cc5d877f93c4f9813f8543351e1c900000000"/>
 		<Metadata name="Catalog.ХранилищаКонфигураций.Form.ФормаЭлемента.Help" id="6cc206d4-d733-4a4a-8ed2-adf76440f6af.1" configVersion="6468f04925347740a2c42f9d8de0890e00000000"/>
 		<Metadata name="Catalog.ХранилищаКонфигураций.Help" id="58570c20-db1f-43f1-af51-47fbbb1a4807.1" configVersion="c008b2e98abc5a459976a3e1f2c1daf100000000"/>
-		<Metadata name="Catalog.ХранилищаКонфигураций.ObjectModule" id="58570c20-db1f-43f1-af51-47fbbb1a4807.0" configVersion="6c73df95d6889344ad55c7de49f1f98700000000"/>
+		<Metadata name="Catalog.ХранилищаКонфигураций.ObjectModule" id="58570c20-db1f-43f1-af51-47fbbb1a4807.0" configVersion="9d2b24d289d96642928bfce74ba317d500000000"/>
 		<Metadata name="Catalog.ноВременныеБазы" id="3a5b7c9d-0e1f-4f6a-8b9c-2d4e6f8a0b1c" configVersion="93b77409ccfeb5428ae788cddd907ebd00000000">
 			<Metadata name="Catalog.ноВременныеБазы.Attribute.ДатаПоследнегоОсвобождения" id="0c2d3e4f-7b8c-9e0f-1a2b-8c9d0e1f2a3b"/>
 			<Metadata name="Catalog.ноВременныеБазы.Attribute.Кластер" id="4c6e8f0a-1b3d-4f6a-8b9c-2d4e6f8a0b1c"/>
