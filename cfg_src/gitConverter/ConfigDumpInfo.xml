@@ -19,8 +19,8 @@
 			<Metadata name="Catalog.ВерсииХранилища.Attribute.ДатаСоздания" id="f7f6eeac-9489-475f-bb38-97aade2249a4"/>
 			<Metadata name="Catalog.ВерсииХранилища.Attribute.ноКоличествоМетаданныхКоммита" id="ff0aece7-02f2-417f-b107-a83d65c56da7"/>
 		</Metadata>
-		<Metadata name="Catalog.ВерсииХранилища.Form.ФормаСписка" id="31938434-9934-4253-ba9f-7818396dc5da" configVersion="817741a9d6a3be4aa9ddfe269196128000000000"/>
-		<Metadata name="Catalog.ВерсииХранилища.Form.ФормаСписка.Form" id="31938434-9934-4253-ba9f-7818396dc5da.0" configVersion="6794d726b750244cb5a4ea7c2ee034e500000000"/>
+		<Metadata name="Catalog.ВерсииХранилища.Form.ФормаСписка" id="31938434-9934-4253-ba9f-7818396dc5da" configVersion="ead669fbfa01bc49a406efdf3739e84700000000"/>
+		<Metadata name="Catalog.ВерсииХранилища.Form.ФормаСписка.Form" id="31938434-9934-4253-ba9f-7818396dc5da.0" configVersion="a5d49926f6201c4cb69fe4e4b7d3922b00000000"/>
 		<Metadata name="Catalog.ВерсииХранилища.Form.ФормаЭлемента" id="64734ed3-717c-40cb-bc7e-0d89ee9165d9" configVersion="e90d519abfa7a9438c4b33cc2111dde200000000"/>
 		<Metadata name="Catalog.ВерсииХранилища.Form.ФормаЭлемента.Form" id="64734ed3-717c-40cb-bc7e-0d89ee9165d9.0" configVersion="38f7a14dd4851447af0ce0e97d50dd9c00000000"/>
 		<Metadata name="Catalog.ВерсииХранилища.Help" id="9193d044-7a2c-4ea3-9506-aa5792b3adca.1" configVersion="737cdebc6368044880b1511aaeb2fff300000000"/>
