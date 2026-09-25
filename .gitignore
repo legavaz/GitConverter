@@ -30,3 +30,8 @@ _tmp_*.bat
 *.log
 *.cf
 1Cv8Log/
+
+# Локальные секреты и артефакты сборки — не в репозиторий
+params_key_1509.txt
+opencode.json
+MCP_Toolkit.epf
