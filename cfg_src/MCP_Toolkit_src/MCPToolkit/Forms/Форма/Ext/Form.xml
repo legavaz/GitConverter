@@ -12,6 +12,72 @@
 			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="СтраницыФормыРасширеннаяПодсказка" id="56"/>
 			<ChildItems>
+				<Page name="СтраницаЖурнал" id="220">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Журнал</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница журнал</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаЖурналРасширеннаяПодсказка" id="221"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЛог" id="17">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Журнал событий</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаЛогРасширеннаяПодсказка" id="18"/>
+							<ChildItems>
+								<InputField name="ЛогПоле" id="19">
+									<DataPath>Лог</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleLocation>None</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="ЛогПолеКонтекстноеМеню" id="212"/>
+									<ExtendedTooltip name="ЛогПолеРасширеннаяПодсказка" id="20"/>
+								</InputField>
+								<UsualGroup name="ГруппаЛогПанель" id="186">
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЛогПанельРасширеннаяПодсказка" id="187"/>
+									<ChildItems>
+										<Button name="КнопкаОчиститьЖурнал" id="30">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОчиститьЖурнал</CommandName>
+											<ExtendedTooltip name="КнопкаОчиститьЖурналРасширеннаяПодсказка" id="31"/>
+										</Button>
+										<LabelDecoration name="НадписьВерсия" id="188">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<TextColor>web:Blue</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>v1.7.1</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<ContextMenu name="НадписьВерсияКонтекстноеМеню" id="189"/>
+											<ExtendedTooltip name="НадписьВерсияРасширеннаяПодсказка" id="190"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
 				<Page name="СтраницаПодключение" id="57">
 					<Title>
 						<v8:item>
@@ -701,56 +767,6 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
-						<UsualGroup name="ГруппаЛог" id="17">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Журнал событий</v8:content>
-								</v8:item>
-							</Title>
-							<Group>Vertical</Group>
-							<Representation>NormalSeparation</Representation>
-							<ExtendedTooltip name="ГруппаЛогРасширеннаяПодсказка" id="18"/>
-							<ChildItems>
-								<InputField name="ЛогПоле" id="19">
-									<DataPath>Лог</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<TitleLocation>None</TitleLocation>
-									<Width>80</Width>
-									<Height>10</Height>
-									<MultiLine>true</MultiLine>
-									<ContextMenu name="ЛогПолеКонтекстноеМеню" id="212"/>
-									<ExtendedTooltip name="ЛогПолеРасширеннаяПодсказка" id="20"/>
-								</InputField>
-								<UsualGroup name="ГруппаЛогПанель" id="186">
-									<Group>AlwaysHorizontal</Group>
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаЛогПанельРасширеннаяПодсказка" id="187"/>
-									<ChildItems>
-										<Button name="КнопкаОчиститьЖурнал" id="30">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.ОчиститьЖурнал</CommandName>
-											<ExtendedTooltip name="КнопкаОчиститьЖурналРасширеннаяПодсказка" id="31"/>
-										</Button>
-										<LabelDecoration name="НадписьВерсия" id="188">
-											<AutoMaxWidth>false</AutoMaxWidth>
-											<HorizontalStretch>true</HorizontalStretch>
-											<TextColor>web:Blue</TextColor>
-											<Title formatted="false">
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>v1.7.1</v8:content>
-												</v8:item>
-											</Title>
-											<HorizontalAlign>Right</HorizontalAlign>
-											<ContextMenu name="НадписьВерсияКонтекстноеМеню" id="189"/>
-											<ExtendedTooltip name="НадписьВерсияРасширеннаяПодсказка" id="190"/>
-										</LabelDecoration>
-									</ChildItems>
-								</UsualGroup>
-							</ChildItems>
-						</UsualGroup>
 					</ChildItems>
 				</Page>
 				<Page name="СтраницаАнонимизация" id="59">
@@ -828,6 +844,7 @@
 							</Title>
 							<Group>Vertical</Group>
 							<Behavior>Collapsible</Behavior>
+							<Collapsed>true</Collapsed>
 							<ControlRepresentation>Picture</ControlRepresentation>
 							<Representation>NormalSeparation</Representation>
 							<ExtendedTooltip name="ГруппаМаппингиРасширеннаяПодсказка" id="103"/>
@@ -963,6 +980,7 @@
 							<HorizontalStretch>true</HorizontalStretch>
 							<Group>Vertical</Group>
 							<Behavior>Collapsible</Behavior>
+							<Collapsed>true</Collapsed>
 							<ControlRepresentation>Picture</ControlRepresentation>
 							<Representation>NormalSeparation</Representation>
 							<ExtendedTooltip name="ГруппаДеАнонимизацияТекстаРасширеннаяПодсказка" id="109"/>
