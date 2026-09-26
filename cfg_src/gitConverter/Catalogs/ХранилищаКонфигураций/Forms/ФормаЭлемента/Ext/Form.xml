@@ -9,6 +9,11 @@
 				<CommandName>Form.Command.ЗапуститьКонвертацию</CommandName>
 				<ExtendedTooltip name="FormЗапуститьКонвертациюРасширеннаяПодсказка" id="32"/>
 			</Button>
+			<Button name="ФормаCtmВыполнитьСинхронизациюГитсинк" id="199">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ctmВыполнитьСинхронизациюГитсинк</CommandName>
+				<ExtendedTooltip name="ФормаCtmВыполнитьСинхронизациюГитсинкРасширеннаяПодсказка" id="200"/>
+			</Button>
 			<Button name="FormВыполнитьКоммиты" id="33">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ВыполнитьКоммиты</CommandName>
@@ -421,6 +426,11 @@
 					<ContextMenu name="ВерсияВGitКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="ВерсияВGitРасширеннаяПодсказка" id="18"/>
 				</InputField>
+				<CheckBoxField name="ctmИспользоватьGitsync" id="196">
+					<DataPath>Объект.ctmИспользоватьGitsync</DataPath>
+					<ContextMenu name="ctmИспользоватьGitsyncКонтекстноеМеню" id="197"/>
+					<ExtendedTooltip name="ctmИспользоватьGitsyncРасширеннаяПодсказка" id="198"/>
+				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа6" id="137">
@@ -1122,6 +1132,9 @@
 			</ToolTip>
 			<Action>ОбнулитьСчетчикВременныхБаз</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+			<Command name="ctmВыполнитьСинхронизациюГитсинк" id="12">
+			<Action>ctmВыполнитьСинхронизациюГитсинк</Action>
 		</Command>
 	</Commands>
 </Form>

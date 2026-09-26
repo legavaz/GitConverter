@@ -303,9 +303,13 @@
 			<ScheduledJob>ВыгрузкаВерсииИзКопииХранилища</ScheduledJob>
 			<ScheduledJob>КонвертацияХранилища</ScheduledJob>
 			<ScheduledJob>ОбработкаОчереди</ScheduledJob>
+			<ScheduledJob>ctmКонвертацияХранилищаGitsync</ScheduledJob>
 			<FunctionalOption>ИспользоватьОчередиВыполнения</FunctionalOption>
 			<Constant>ИспользоватьОчередиВыполнения</Constant>
 			<Constant>ПутьКВерсиямПлатформыНаСервере</Constant>
+			<Constant>ctmПутьКПлагинамGitsync</Constant>
+			<Constant>ctmПутьКОнеСкриптНаСервере</Constant>
+			<Constant>ctmБазаGitsyncНаСервере</Constant>
 			<Catalog>ВерсииХранилища</Catalog>
 			<Catalog>КопииХранилищКонфигурации</Catalog>
 			<Catalog>ноВременныеБазы</Catalog>
