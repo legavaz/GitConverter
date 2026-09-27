@@ -140,8 +140,8 @@
 		<Metadata name="CommonModule.ДлительныеОперации.Module" id="b3fc2300-8ec4-4512-950a-e07a98ab4193.0" configVersion="3624e423c4642140a64d59c78cb6eab900000000"/>
 		<Metadata name="CommonModule.ДлительныеОперацииКлиент" id="9c468c2b-3310-4ccd-9361-b734db920300" configVersion="8226c73dca96a840938902aaa0a4962c00000000"/>
 		<Metadata name="CommonModule.ДлительныеОперацииКлиент.Module" id="9c468c2b-3310-4ccd-9361-b734db920300.0" configVersion="8c9c5abdabb1f748b8b16bff4c67caae00000000"/>
-		<Metadata name="CommonModule.КонвертацияХранилища" id="aa81c58e-df4c-4a04-bf4b-9a4fc17208fd" configVersion="b81b74869fef4d4baecdb4197c5c773e00000000"/>
-		<Metadata name="CommonModule.КонвертацияХранилища.Module" id="aa81c58e-df4c-4a04-bf4b-9a4fc17208fd.0" configVersion="215ca81d3d17cf43a05a1dd3f9e8029600000000"/>
+		<Metadata name="CommonModule.КонвертацияХранилища" id="aa81c58e-df4c-4a04-bf4b-9a4fc17208fd" configVersion="b67a9afb3b7d95418c4155b893229feb00000000"/>
+		<Metadata name="CommonModule.КонвертацияХранилища.Module" id="aa81c58e-df4c-4a04-bf4b-9a4fc17208fd.0" configVersion="0dce5d3e582f6641af520615ea6aee3c00000000"/>
 		<Metadata name="CommonModule.ОбработкаОчередей" id="900e1dee-e907-4e08-8d93-666ae9d01836" configVersion="e5aadacdb95a8246b8263ee5a10167c000000000"/>
 		<Metadata name="CommonModule.ОбработкаОчередей.Module" id="900e1dee-e907-4e08-8d93-666ae9d01836.0" configVersion="e89a6ddf32a95749973ba7c01ec7861400000000"/>
 		<Metadata name="CommonModule.ОбщегоНазначения" id="7cfcfd65-a296-42df-9ab5-7c7c37730626" configVersion="fdc0d7761ed34c45b17af8b2b1311f7000000000"/>
