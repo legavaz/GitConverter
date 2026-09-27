@@ -285,6 +285,7 @@
 			<Role>ПолныеПрава</Role>
 			<Role>АдминистраторСистемы</Role>
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
+			<CommonTemplate>ctmПустаяКонфигурация</CommonTemplate>
 			<CommonModule>ДлительныеОперации</CommonModule>
 			<CommonModule>ДлительныеОперацииКлиент</CommonModule>
 			<CommonModule>КонвертацияХранилища</CommonModule>
