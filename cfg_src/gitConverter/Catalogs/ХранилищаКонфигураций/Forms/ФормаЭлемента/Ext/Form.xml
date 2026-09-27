@@ -59,6 +59,11 @@
 				<CommandName>Form.Command.ОбнулитьСчетчикВременныхБаз</CommandName>
 				<ExtendedTooltip name="ФормаОбнулитьСчетчикВременныхБазРасширеннаяПодсказка" id="175"/>
 			</Button>
+			<Button name="ФормаCtmЗаполнитьВерсииИПользователей" id="210">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ctmЗаполнитьВерсииИПользователей</CommandName>
+				<ExtendedTooltip name="ФормаCtmЗаполнитьВерсииИПользователейРасширеннаяПодсказка" id="211"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -1136,6 +1141,22 @@
 		</Command>
 		<Command name="ctmВыполнитьСинхронизациюГитсинк" id="12">
 			<Action>ctmВыполнитьСинхронизациюГитсинк</Action>
+		</Command>
+		<Command name="ctmЗаполнитьВерсииИПользователей" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Получить все версии и заполнить пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать отчёт по всем версиям хранилища, записать их в справочник и предзаполнить регистр «Информация пользователей» по полю «Пользователь» версий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ctmЗаполнитьВерсииИПользователей</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 </Form>
