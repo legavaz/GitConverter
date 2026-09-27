@@ -437,6 +437,30 @@
 					<ContextMenu name="ctmИспользоватьGitsyncКонтекстноеМеню" id="197"/>
 					<ExtendedTooltip name="ctmИспользоватьGitsyncРасширеннаяПодсказка" id="198"/>
 				</CheckBoxField>
+				<InputField name="ctmИмяРасширения" id="220">
+					<DataPath>Объект.ctmИмяРасширения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя расширения конфигурации. Заполнено — конвейер работает в режиме хранилища расширения</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ctmИмяРасширенияКонтекстноеМеню" id="221"/>
+					<ExtendedTooltip name="ctmИмяРасширенияРасширеннаяПодсказка" id="222"/>
+				</InputField>
+				<InputField name="ctmКаталогЗасеваРасширения" id="223">
+					<DataPath>Объект.ctmКаталогЗасеваРасширения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Каталог XML-выгрузки расширения для засева во временную базу перед чтением версий</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ctmКаталогЗасеваРасширенияКонтекстноеМеню" id="224"/>
+					<ExtendedTooltip name="ctmКаталогЗасеваРасширенияРасширеннаяПодсказка" id="225"/>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа6" id="137">
