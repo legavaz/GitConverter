@@ -1698,7 +1698,8 @@
 			</Attribute>
 			<Attribute uuid="387dc809-06b4-4e82-a582-8e794b261c38">
 				<Properties>
-					<Name>ctmИспользоватьGitsync</Name><Synonym>
+					<Name>ctmИспользоватьGitsync</Name>
+					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>ctmиспользоватьgitsync</v8:content>

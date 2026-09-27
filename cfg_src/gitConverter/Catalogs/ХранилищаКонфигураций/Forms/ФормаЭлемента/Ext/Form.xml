@@ -428,6 +428,7 @@
 				</InputField>
 				<CheckBoxField name="ctmИспользоватьGitsync" id="196">
 					<DataPath>Объект.ctmИспользоватьGitsync</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ctmИспользоватьGitsyncКонтекстноеМеню" id="197"/>
 					<ExtendedTooltip name="ctmИспользоватьGitsyncРасширеннаяПодсказка" id="198"/>
 				</CheckBoxField>
@@ -1133,7 +1134,7 @@
 			<Action>ОбнулитьСчетчикВременныхБаз</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-			<Command name="ctmВыполнитьСинхронизациюГитсинк" id="12">
+		<Command name="ctmВыполнитьСинхронизациюГитсинк" id="12">
 			<Action>ctmВыполнитьСинхронизациюГитсинк</Action>
 		</Command>
 	</Commands>
