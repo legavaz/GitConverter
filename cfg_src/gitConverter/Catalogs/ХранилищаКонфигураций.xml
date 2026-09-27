@@ -1736,7 +1736,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-						<Attribute uuid="b721258a-e767-4a75-940d-986f34cc0266">
+			<Attribute uuid="b721258a-e767-4a75-940d-986f34cc0266">
 				<Properties>
 					<Name>ctmИмяРасширения</Name>
 					<Synonym>
