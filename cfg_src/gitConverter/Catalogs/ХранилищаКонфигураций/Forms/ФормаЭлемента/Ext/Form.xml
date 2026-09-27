@@ -141,7 +141,13 @@
 					<ContextMenu name="ПоследняяВерсияКонтекстноеМеню1" id="63"/>
 					<ExtendedTooltip name="ПоследняяВерсияРасширеннаяПодсказка1" id="64"/>
 				</InputField>
-				<CommandBar name="Группа8" id="189">
+					<Button name="ФормаCtmОбнулитьДиапазонВерсий" id="230">
+					<Type>CommandBarButton</Type>
+					<CommandName>Form.Command.ctmОбнулитьДиапазонВерсий</CommandName>
+					<TextColor>style:SpecialTextColor</TextColor>
+					<ExtendedTooltip name="ФормаCtmОбнулитьДиапазонВерсийРасширеннаяПодсказка" id="231"/>
+				</Button>
+			<CommandBar name="Группа8" id="189">
 					<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="190"/>
 					<ChildItems>
 						<Popup name="Группа9" id="191">
@@ -1180,6 +1186,22 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ctmЗаполнитьВерсииИПользователей</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ctmОбнулитьДиапазонВерсий" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обнулить диапазон версий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить состояния версий из диапазона «Первая версия»…«Последняя версия» для повторного получения и коммита и выставить указатели продолжения (Версия в Git и код элемента = версия перед диапазоном)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ctmОбнулитьДиапазонВерсий</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
