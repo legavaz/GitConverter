@@ -119,7 +119,8 @@
 
 - **База:** `localhost\GitConv`, пользователь `Администратор`
 - **Платформа:** `C:\Program Files\1cv8\8.3.27.2214\bin`
-- **Хранилище:** `E:\rep\task`; **рабочий git-репозиторий:** `E:\rep\task_git_file210`; выгрузка: `E:\rep\task_temp_file210`
+- **Хранилище:** `E:\rep\task`; **рабочий git-репозиторий:** `E:\rep\task_git_file211`; выгрузка: `E:\rep\task_temp_file210`
+- **Другие хранилища:** `E:\repository\erp25` (git `E:\rep\erp25_git`), `E:\rep\erp25ExtDopFunkcional` — расширение (git `E:\rep\erp25ExtDopFunkcional_git`)
 - **MCP:** `mcp-1c` — 1C MCP Toolkit в сеансе `localhost\GitConv` (`http://localhost:6003/mcp`; поднимается обработкой `MCP_Toolkit.epf`, автостарт при открытии формы); `code-index` (`http://127.0.0.1:8011/mcp`); `bsl-language-server` (анализ BSL). Обёртка вызова по HTTP — `docs/audit-2026-09-28/mcp_1c_call.ps1`
 - **Окружение 1С:** клиентский сеанс — **один и видимый** (AGENTS.md, Правило 9); окно не скрывать
 - **Внешние инструменты (в конфигурации больше не используются):** OneScript `C:\tools\OneScript-1.9.4`, плагины `C:\tools\gitsync_plugins`, форк `gitsync-multithread`, дистрибутив `C:\tools\gitsync-upstream\gitsync-3.8.0.ospx`
