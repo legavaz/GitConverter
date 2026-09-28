@@ -1,28 +1,20 @@
 {
   "editingAllowedCheck": "off",
-  "comment": "Конфигурация ГитКонвертер разрабатывается напрямую из XML-выгрузки, редактирование на поддержке отключено.",
+  "comment": "Конфигурация ГитКонвертер разрабатывается напрямую из XML-выгрузки, редактирование на поддержке отключено. Основная база — рабочая localhost\\GitConv (id gitconv, default): отдельной файловой dev-базы нет (E:\\file_bases\\git_converter отсутствует), для проверок сборки/синтаксиса создаётся временная база. ВНИМАНИЕ: default — рабочая база, поэтому в скриптах базу лучше указывать явно.",
   "v8path": "C:\\Program Files\\1cv8\\8.3.27.2214\\bin",
   "databases": [
     {
-      "id": "dev",
-      "name": "ГитКонвертер",
-      "type": "file",
-      "path": "E:\\file_bases\\git_converter",
-      "aliases": ["dev", "гитконвертер", "git_converter"],
-      "branches": ["lega-master", "master"],
-      "configSrc": "E:\\project\\0509 git converter\\cfg_src"
-    },
-    {
       "id": "gitconv",
-      "name": "ГитКонвертер (рабочая база)",
+      "name": "ГитКонвертер (рабочая база = разработка)",
       "type": "server",
       "server": "localhost",
       "ref": "GitConv",
       "user": "Администратор",
       "password": "",
-      "aliases": ["gitconv", "рабочая", "prod", "прод"],
+      "aliases": ["gitconv", "dev", "гитконвертер", "git_converter", "рабочая", "prod", "прод"],
+      "branches": ["lega-master", "master"],
       "configSrc": "E:\\project\\0509 git converter\\cfg_src"
     }
   ],
-  "default": "dev"
+  "default": "gitconv"
 }
