@@ -1,6 +1,7 @@
 {
   "editingAllowedCheck": "off",
   "comment": "Конфигурация ГитКонвертер разрабатывается напрямую из XML-выгрузки, редактирование на поддержке отключено.",
+  "v8path": "C:\\Program Files\\1cv8\\8.3.27.2214\\bin",
   "databases": [
     {
       "id": "dev",
@@ -9,6 +10,17 @@
       "path": "E:\\file_bases\\git_converter",
       "aliases": ["dev", "гитконвертер", "git_converter"],
       "branches": ["lega-master", "master"],
+      "configSrc": "E:\\project\\0509 git converter\\cfg_src"
+    },
+    {
+      "id": "gitconv",
+      "name": "ГитКонвертер (рабочая база)",
+      "type": "server",
+      "server": "localhost",
+      "ref": "GitConv",
+      "user": "Администратор",
+      "password": "",
+      "aliases": ["gitconv", "рабочая", "prod", "прод"],
       "configSrc": "E:\\project\\0509 git converter\\cfg_src"
     }
   ],

@@ -1,0 +1,46 @@
+﻿=== ВЕРИФИКАЦИЯ БАЗЫ ГИТКОНВЕРТЕРА (COM, только чтение) ===
+Дата: 28.09.2026 13:23:12
+
+--- 1. Наличие объектов в метаданных ---
+Constant ctmПутьКОнеСкриптНаСервере : True
+Constant ctmПутьКПлагинамGitsync : True
+Constant ctmБазаGitsyncНаСервере : True
+Constant ПутьКОнеСкриптНаСервере : False
+Constant БазаGitsyncНаСервере : False
+Constant ИмяБазыGitsyncНаСервере : False
+ScheduledJob ctmКонвертацияХранилищаGitsync : True
+ScheduledJob КонвертацияХранилищаGitsync : False
+ScheduledJob КонвертацияХранилища : True
+ScheduledJob ОбработкаОчереди : True
+ScheduledJob ВыгрузкаВерсииИзКопииХранилища : True
+Реквизит ХранилищаКонфигураций.ctmИспользоватьGitsync : True
+Реквизит ХранилищаКонфигураций.ctmИмяРасширения : True
+Реквизит ХранилищаКонфигураций.Адрес : True
+Реквизит ХранилищаКонфигураций.ВерсияВGit : True
+
+--- 2. Значения констант ---
+ctmПутьКОнеСкриптНаСервере = [C:\tools\OneScript-1.9.4\bin]
+ctmПутьКПлагинамGitsync = [C:\tools\gitsync_plugins]
+ctmБазаGitsyncНаСервере = [System.__ComObject]
+ПутьКВерсиямПлатформыНаСервере = [C:\Program Files\1cv8\%ВерсияПлатформы%\bin]
+ИспользоватьОчередиВыполнения = [False]
+
+--- 3. Справочник.ХранилищаКонфигураций ---
+ОШИБКА блока 3: Exception calling "InvokeMember" with "5" argument(s): "Unknown name. (Exception from HRESULT: 0x80020006 (DISP_E_UNKNOWNNAME))"
+
+--- 4. Справочник.ноКластеры ---
+ОШИБКА блока 4: Exception calling "InvokeMember" with "5" argument(s): "Unknown name. (Exception from HRESULT: 0x80020006 (DISP_E_UNKNOWNNAME))"
+
+--- 5. Справочник.ноВременныеБазы ---
+ОШИБКА блока 5: Exception calling "InvokeMember" with "5" argument(s): "Unknown name. (Exception from HRESULT: 0x80020006 (DISP_E_UNKNOWNNAME))"
+
+--- 6. Регламентные задания (факт в базе) ---
+КонвертацияХранилища | Использование=False | Расписание=System.__ComObject
+КонвертацияХранилища | Использование=True | Расписание=System.__ComObject
+КонвертацияХранилища | Использование=False | Расписание=System.__ComObject
+ОбработкаОчереди | Использование=False | Расписание=System.__ComObject
+ctmКонвертацияХранилищаGitsync | Использование=False | Расписание=System.__ComObject
+итого записей заданий: 5
+
+--- 7. Фоновые задания (фильтр gitsync) ---
+всего в списке: 120 | с gitsync: 0

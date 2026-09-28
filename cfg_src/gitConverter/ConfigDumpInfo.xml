@@ -64,7 +64,6 @@
 			<Metadata name="Catalog.ХранилищаКонфигураций.Attribute.ОстановитьКонвертацию" id="1c30f971-789c-4fbc-9bf0-3592d8f9254e"/>
 			<Metadata name="Catalog.ХранилищаКонфигураций.Attribute.МинимальноеКоличествоМетаданных" id="22f8d498-22c3-4588-811d-cba4811815ee"/>
 			<Metadata name="Catalog.ХранилищаКонфигураций.Attribute.КаталогВыгрузкиВерсий" id="2f6cc1a0-2612-47b8-8b47-9426ef0d5891"/>
-			<Metadata name="Catalog.ХранилищаКонфигураций.Attribute.ctmИспользоватьGitsync" id="387dc809-06b4-4e82-a582-8e794b261c38"/>
 			<Metadata name="Catalog.ХранилищаКонфигураций.Attribute.ЗапретитьИспользованиеОбщихОчередей" id="59fac5ee-ec7b-11e7-cf94-8c859066bfb6"/>
 			<Metadata name="Catalog.ХранилищаКонфигураций.Attribute.КоличествоКоммитов" id="5e351ed8-ed70-4e03-a872-b888b77d36ef"/>
 			<Metadata name="Catalog.ХранилищаКонфигураций.Attribute.ПерваяВерсия" id="62f22b4c-2b94-4a77-bcca-a5b95863bde9"/>
@@ -181,15 +180,6 @@
 		<Metadata name="Configuration.ГитКонвертер.MainSectionCommandInterface" id="74bc66aa-4827-4253-be13-e7622b3b00a5.9" configVersion="4cd97b6ca7047d4aa87f92f3bea8433300000000"/>
 		<Metadata name="Configuration.ГитКонвертер.ManagedApplicationModule" id="74bc66aa-4827-4253-be13-e7622b3b00a5.6" configVersion="1f7c6908dc2b0a46a49fdfe658a5615900000000"/>
 		<Metadata name="Configuration.ГитКонвертер.ParentConfigurations" id="74bc66aa-4827-4253-be13-e7622b3b00a5.4" configVersion="83a978fc48b00a4ca802baa15d6343dd00000000"/>
-		<Metadata name="Constant.ctmБазаGitsyncНаСервере" id="050c5ff5-96b4-46f3-96f7-47dfb7c0b163" configVersion="8571c494b0c6bd4faaf6bb3c803660cb00000000"/>
-		<Metadata name="Constant.ctmБазаGitsyncНаСервере.ManagerModule" id="050c5ff5-96b4-46f3-96f7-47dfb7c0b163.1" configVersion="83c9932a2b26e94fb195c4bdc26fa13400000000"/>
-		<Metadata name="Constant.ctmБазаGitsyncНаСервере.ValueManagerModule" id="050c5ff5-96b4-46f3-96f7-47dfb7c0b163.0" configVersion="98699e5e6c29be4eaa559fa4d689e48b00000000"/>
-		<Metadata name="Constant.ctmПутьКОнеСкриптНаСервере" id="7717f989-5a84-4f4f-bb3d-b686cbe6fc91" configVersion="62e3279b3c9d5e47920a4546eb6047ca00000000"/>
-		<Metadata name="Constant.ctmПутьКОнеСкриптНаСервере.ManagerModule" id="7717f989-5a84-4f4f-bb3d-b686cbe6fc91.1" configVersion="aabdd831b7cdec42af52bb86aac36f7a00000000"/>
-		<Metadata name="Constant.ctmПутьКОнеСкриптНаСервере.ValueManagerModule" id="7717f989-5a84-4f4f-bb3d-b686cbe6fc91.0" configVersion="1611aa7c7bfd9344b8df02fc1fbecf0300000000"/>
-		<Metadata name="Constant.ctmПутьКПлагинамGitsync" id="471e25a0-5d90-464a-a915-b3103ad20b5e" configVersion="f21e9d2c94b359418a82ddd402e65bc600000000"/>
-		<Metadata name="Constant.ctmПутьКПлагинамGitsync.ManagerModule" id="471e25a0-5d90-464a-a915-b3103ad20b5e.1" configVersion="9b0b15b95f9fd245a500481881b4f74200000000"/>
-		<Metadata name="Constant.ctmПутьКПлагинамGitsync.ValueManagerModule" id="471e25a0-5d90-464a-a915-b3103ad20b5e.0" configVersion="255d97b872665a4d90a3c78dc75c7c8700000000"/>
 		<Metadata name="Constant.ИспользоватьОчередиВыполнения" id="dabdb562-1efa-4d36-84ed-45360e603415" configVersion="6fb564fb521fb34e9fca88809bb41b0c00000000"/>
 		<Metadata name="Constant.ПутьКВерсиямПлатформыНаСервере" id="e8d0c7dd-56bc-46a0-b7e8-f1b6b715dbb0" configVersion="3b899a2ab7c53f4db21fb7ca13dcfcf600000000"/>
 		<Metadata name="Constant.ПутьКВерсиямПлатформыНаСервере.ValueManagerModule" id="e8d0c7dd-56bc-46a0-b7e8-f1b6b715dbb0.0" configVersion="6c4038e6c1c1874797bcc9a470a4e46300000000"/>
@@ -256,7 +246,6 @@
 		<Metadata name="Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок.Rights" id="08e221cc-2b0a-4d54-a72d-ee6692308c7c.0" configVersion="7036034c8c88e14fb6b81a21f013fa9100000000"/>
 		<Metadata name="Role.ПолныеПрава" id="94c83e34-f3c1-4b96-b58b-57d901855bea" configVersion="87c31e5aec22d0428db40ac88d2851d500000000"/>
 		<Metadata name="Role.ПолныеПрава.Rights" id="94c83e34-f3c1-4b96-b58b-57d901855bea.0" configVersion="75f0f1b5a4cd4945aac01cb4c14ba55a00000000"/>
-		<Metadata name="ScheduledJob.ctmКонвертацияХранилищаGitsync" id="d530fa28-363b-45ee-8831-089d54ecda72" configVersion="adc70f6f1a6f3940bb239586178e7c6a00000000"/>
 		<Metadata name="ScheduledJob.ВыгрузкаВерсииИзКопииХранилища" id="aa993310-8e65-4336-a5ea-5f4a15f868c1" configVersion="21a4f83eb3a8e44fbfc77c192cdfcf3000000000"/>
 		<Metadata name="ScheduledJob.КонвертацияХранилища" id="29ef78ff-304e-483f-bd6d-5d6940f51be4" configVersion="34fe85e313d858438e53454308c8c88b00000000"/>
 		<Metadata name="ScheduledJob.КонвертацияХранилища.Schedule" id="29ef78ff-304e-483f-bd6d-5d6940f51be4.0" configVersion="4270ea8531d85b4c9876d8fd8e6d1a0400000000"/>
