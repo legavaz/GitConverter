@@ -279,6 +279,7 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<Subsystem>ctmГитКонвертер</Subsystem>
 			<StyleItem>ТекстЗапрещеннойЯчейкиЦвет</StyleItem>
 			<CommonPicture>ВыполнитьРегламентноеЗаданиеВручную</CommonPicture>
 			<CommonPicture>ДлительнаяОперация48</CommonPicture>
@@ -319,6 +320,7 @@
 			<Enum>ноСостоянияВременныхБаз</Enum>
 			<Enum>ноТипыСУБД</Enum>
 			<Report>СкоростьКонвертации</Report>
+			<Report>ctmСкоростьЭтаповКонвертации</Report>
 			<DataProcessor>РегламентныеИФоновыеЗадания</DataProcessor>
 			<DataProcessor>КонвертацияВФорматEDT</DataProcessor>
 			<InformationRegister>ИнформацияПользователей</InformationRegister>
