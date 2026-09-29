@@ -279,7 +279,7 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
-			<Subsystem>ctmГитКонвертер</Subsystem>
+			<Subsystem/>
 			<StyleItem>ТекстЗапрещеннойЯчейкиЦвет</StyleItem>
 			<CommonPicture>ВыполнитьРегламентноеЗаданиеВручную</CommonPicture>
 			<CommonPicture>ДлительнаяОперация48</CommonPicture>
